@@ -1,0 +1,294 @@
+/* ==========================================================================
+   PetCare - About Us & Why Choose Us (Flatsome Theme Exact 100% Match)
+   ========================================================================== */
+
+/* About Cover */
+.about-us-cover {
+  padding: 100px 0 60px;
+  background: #ffffff;
+}
+
+.about-us-cover-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.about-us-cover-text h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+.about-us-cover-text p {
+  font-size: 1.15rem;
+  color: #555555;
+}
+
+/* About Section 2 (Chúng tôi ở đây để giúp bạn) */
+.about-us-section-2 {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.about-intro-box {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-intro-box h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.about-intro-box p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444444;
+  margin-bottom: 18px;
+}
+
+.about-divider {
+  max-width: 160px;
+  height: 2px;
+  background-color: #000000;
+  margin: 30px 0;
+}
+
+/* Core Values (Giá trị cốt lõi) */
+.about-us-core-value {
+  padding: 100px 0;
+  background: #fdfdfd;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.core-values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+@media (max-width: 850px) {
+  .core-values-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.core-value-item {
+  margin-bottom: 26px;
+}
+
+.core-value-item:last-child {
+  margin-bottom: 0;
+}
+
+.core-value-item strong {
+  font-size: 1.25rem;
+  color: #000000;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.core-value-item p {
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Dr. An Biography */
+.about-us-dr-an {
+  padding: 100px 0;
+  background-color: rgba(80, 81, 81, 0.08);
+}
+
+.dr-an-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .dr-an-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.dr-an-info h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-bottom: 20px;
+}
+
+.dr-an-info p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+.dr-an-quote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+  margin-top: 24px;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Why Choose PetCare Page
+   ========================================================================== */
+
+.why-petcare-top {
+  padding: 120px 0 80px;
+  background: #ffffff;
+}
+
+.why-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .why-top-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* 4 Feature Waves Sections */
+.why-feature-section {
+  padding: 140px 0;
+  position: relative;
+}
+
+.why-feature-section.tint-green {
+  background-color: rgba(69, 177, 51, 0.25);
+}
+
+.why-feature-section.tint-gray {
+  background-color: rgba(119, 119, 119, 0.08);
+}
+
+.why-feature-section.tint-primary-soft {
+  background-color: rgba(0, 127, 45, 0.05);
+}
+
+.why-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .why-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.why-feature-text h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  margin-bottom: 18px;
+}
+
+.why-feature-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+.why-review-quote {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-top: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.why-review-quote p {
+  font-size: 0.95rem;
+  color: #282828;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.why-review-quote span {
+  font-size: 0.82rem;
+  color: #777777;
+  font-weight: 600;
+}
+
+/* 6 Services Icon Grid in Why Choose Us */
+.services-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+@media (max-width: 850px) {
+  .services-icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .services-icon-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-icon-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.service-icon-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+.service-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--primary-soft);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.service-icon-text h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.service-icon-text p {
+  font-size: 0.9rem;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0;
+}
