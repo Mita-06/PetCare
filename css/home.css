@@ -1,365 +1,415 @@
 /* ==========================================================================
-   HOMEPAGE SPECIFIC STYLES (index.html)
-   Hero, Quick Booking, Cost Estimator, Expectation Box, Blackbox Section
+   PetCare - Homepage Styling (Flatsome Theme Exact 100% Match)
    ========================================================================== */
 
 /* Hero Section */
-.hero-section {
-  position: relative;
-  padding: 70px 0 100px;
-  background: linear-gradient(180deg, #ffffff 0%, var(--primary-mint) 100%);
-  overflow: hidden;
+.homepage-hero {
+  padding: 80px 0 60px;
+  background: #ffffff;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: var(--primary-light);
-  color: var(--primary);
-  padding: 6px 16px;
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  border: 1px solid rgba(0, 127, 45, 0.2);
-}
-
-.hero-title {
-  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
-  font-weight: 800;
-  color: var(--dark);
-  margin-bottom: 18px;
-  letter-spacing: -0.02em;
-}
-
-.hero-title .text-highlight {
-  color: var(--primary);
-  position: relative;
-  display: inline-block;
-}
-
-.hero-desc {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 30px;
-}
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-}
-
-.hero-features {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  padding-top: 24px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.hero-feature-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #334155;
-}
-
-.hero-feature-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: var(--primary-light);
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-weight: 700;
-}
-
-.hero-visual {
-  position: relative;
-}
-
-.hero-badge-card {
-  position: absolute;
-  bottom: -20px;
-  left: -20px;
-  background-color: var(--white);
-  padding: 16px 20px;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  z-index: 3;
-  border: 1px solid var(--border-color);
-}
-
-.hero-badge-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background-color: var(--primary);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-badge-text h4 {
-  font-size: 1.05rem;
-  margin-bottom: 2px;
-  color: var(--dark);
-}
-.hero-badge-text p {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 0;
-}
-
-/* Quick Booking Bar */
-.booking-bar-section {
-  margin-top: -50px;
-  position: relative;
-  z-index: 10;
-  margin-bottom: 40px;
-}
-
-.booking-card {
-  background-color: var(--white);
-  border-radius: var(--radius-lg);
-  padding: 30px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.booking-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.booking-card-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.booking-card-title h3 {
-  font-size: 1.3rem;
-  color: var(--dark);
-}
-
-.booking-form-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  align-items: flex-end;
-}
-
-/* Cost Estimator Tool */
-.estimator-card {
-  background-color: var(--white);
-  border-radius: var(--radius-xl);
-  padding: 40px;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(0, 127, 45, 0.15);
-}
-
-.estimator-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.calculator-controls {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.pet-type-selector {
-  display: flex;
-  gap: 14px;
-}
-
-.pet-type-btn {
-  flex: 1;
-  padding: 14px;
-  border-radius: var(--radius-md);
-  border: 2px solid var(--border-color);
-  background-color: #f8fafc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 0.95rem;
-  transition: all var(--transition-fast);
-}
-
-.pet-type-btn.active,
-.pet-type-btn:hover {
-  border-color: var(--primary);
-  background-color: var(--primary-light);
-  color: var(--primary);
-}
-
-.estimator-result-box {
-  background: linear-gradient(135deg, #0f4c20 0%, #007f2d 100%);
-  color: var(--white);
-  border-radius: var(--radius-lg);
-  padding: 34px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 127, 45, 0.3);
-}
-
-.estimator-result-price {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #ffeb3b;
-  margin: 14px 0 6px;
-  font-family: var(--font-heading);
-}
-
-/* Expectation & Quote */
-.expect-grid {
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
   align-items: center;
-}
-
-.expect-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.expect-item {
-  background-color: var(--white);
-  padding: 24px;
-  border-radius: var(--radius-md);
-  border-left: 4px solid var(--primary);
-  box-shadow: var(--shadow-sm);
-}
-
-.expect-item h3 {
-  font-size: 1.2rem;
-  color: var(--primary);
-  margin-bottom: 8px;
-}
-
-.expect-quote-box {
-  background-color: rgba(42, 222, 106, 0.28);
-  border-radius: var(--radius-xl);
-  padding: 40px;
-  position: relative;
-}
-
-.expect-quote-text {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #0f172a;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Blackbox Section */
-.blackbox-section {
-  background-color: var(--dark-bg);
-  color: var(--white);
-  padding: 90px 0;
-}
-
-.blackbox-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
   gap: 50px;
-  align-items: center;
-}
-
-.blackbox-tag {
-  color: var(--accent-lime);
-  font-weight: 700;
-  font-size: 1.05rem;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.blackbox-title {
-  color: var(--white);
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
-  margin-bottom: 24px;
-}
-
-.blackbox-points {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  font-size: 1.05rem;
-  color: #cbd5e1;
-}
-
-.blackbox-point-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.blackbox-point-item svg {
-  width: 20px;
-  height: 20px;
-  color: var(--accent-lime);
-  flex-shrink: 0;
-  margin-top: 4px;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .estimator-grid,
-  .blackbox-grid,
-  .expect-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 850px) {
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
     text-align: center;
-  }
-  .hero-actions,
-  .hero-features {
-    justify-content: center;
-  }
-  .hero-badge-card {
-    left: 20px;
-    bottom: -15px;
   }
 }
 
-@media (max-width: 576px) {
-  .booking-card {
-    padding: 20px;
+.homepage-top-title h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.homepage-top-subtitle p {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.hero-illustration {
+  margin-top: 30px;
+  max-width: 280px;
+}
+
+/* Customer Reviews Section (Google Reviews / TrustIndex) */
+.homepage-reviews {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.reviews-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.trustindex-badge {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  flex-wrap: wrap;
+}
+
+.trustindex-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-score {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.google-stars {
+  color: #fbbc04;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.rating-count {
+  font-size: 0.92rem;
+  color: #555555;
+}
+
+.google-logo-badge {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4285f4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 950px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 600px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.review-item-card {
+  background-color: #f4f4f4;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.review-item-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  background-color: #ffffff;
+  border-color: #d1d5db;
+}
+
+.review-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.review-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-user-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.review-verified {
+  font-size: 0.78rem;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-text {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #444444;
+  margin-top: 10px;
+}
+
+/* Gallery Section */
+.homepage-gallery {
+  background-color: var(--bg-pink);
+  padding: 100px 0 120px;
+  position: relative;
+}
+
+.gallery-masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 40px 0;
+}
+
+@media (max-width: 850px) {
+  .gallery-masonry-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+.gallery-card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  background: #ffffff;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* What to Expect Section (Kỳ vọng gì từ PetCare) */
+.homepage-expect {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.expect-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+@media (max-width: 850px) {
+  .expect-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.expect-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.expect-item h3 {
+  font-size: 1.35rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.expect-item p {
+  color: #555555;
+  line-height: 1.7;
+}
+
+.expect-quote-box {
+  background-color: rgba(42, 222, 106, 0.285);
+  border-radius: 30px;
+  padding: 40px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.quote-author {
+  font-weight: 700;
+  color: #000000;
+  font-size: 1rem;
+}
+
+/* Homepage Blog Section (Chăm sóc thú cưng) */
+.homepage-blog {
+  background-color: var(--bg-pink);
+  padding: 100px 0 140px;
+  position: relative;
+}
+
+.blog-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+@media (max-width: 850px) {
+  .blog-featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-featured-left {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-featured-left:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.blog-featured-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-mini-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.blog-mini-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.blog-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.blog-card-title a {
+  color: var(--text-dark);
+}
+
+.blog-card-title a:hover {
+  color: var(--primary-color);
+}
+
+/* Black Box Section (Không chỉ là phòng khám) */
+.homepage-blackbox {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.blackbox-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 850px) {
+  .blackbox-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.blackbox-tag {
+  color: var(--accent-green);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.blackbox-title {
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.blackbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blackbox-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 1.05rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.blackbox-icon {
+  color: var(--accent-green);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 2px;
 }

@@ -16,217 +16,182 @@
     />
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/services.css" />
-    <link rel="stylesheet" href="./css/blog.css" />
   </head>
-  <body>
-    <!-- THANH ĐIỀU HƯỚNG TRÊN CÙNG (TOP BAR) -->
-    <div class="top-bar">
-      <div class="container top-bar-inner">
-        <div class="top-bar-info">
-          <div class="top-bar-item">
-            <svg fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-              ></path>
-            </svg>
-            <span
-              >386 CMT8, P. Phú Cường, TP. Thủ Dầu Một, Tỉnh Bình Dương</span
-            >
-          </div>
-          <div class="top-bar-item">
-            <svg fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-              ></path>
-            </svg>
-            <span>Giờ làm việc: 8h - 20h (Thứ 2 - Chủ Nhật)</span>
-          </div>
-        </div>
-        <div class="top-bar-socials">
-          <span>Theo dõi:</span>
-          <a href="#" title="Facebook">Facebook</a> •
-          <a href="#" title="Zalo">Zalo</a> •
-          <a href="#" title="TikTok">TikTok</a> •
-          <a href="#" title="Instagram">Instagram</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- HEADER -->
-    <header class="header-main">
-      <div class="container header-inner">
-        <!-- Logo -->
-        <a href="index.html" class="logo" title="Phòng khám Thú Y PetCare">
-          <div class="logo-icon">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-              ></path>
-            </svg>
-          </div>
-          <div class="logo-text">
-            PetCare
-            <span>Thú Y & Pet Care</span>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation Menu -->
-        <nav class="nav-menu">
-          <div class="nav-item active">
-            <a href="index.html" class="nav-link">Trang Chủ</a>
-          </div>
-
-          <div class="nav-item">
-            <a href="about-us.html" class="nav-link">
-              Giới Thiệu
-              <svg
-                class="dropdown-icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </a>
-            <div class="nav-dropdown">
-              <a href="about-us.html" class="dropdown-link">Về Chúng Tôi</a>
-              <a href="why-choose-us.html" class="dropdown-link"
-                >Tại sao chọn PetCare</a
-              >
-            </div>
-          </div>
-
-          <div class="nav-item">
-            <a href="services.html" class="nav-link">
-              Dịch Vụ
-              <svg
-                class="dropdown-icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </a>
-            <div class="nav-dropdown">
-              <a
-                href="service-consultation-treatment.html"
-                class="dropdown-link"
-                >Tư vấn & Điều trị</a
-              >
-              <a href="service-blood-test.html" class="dropdown-link"
-                >Xét nghiệm máu</a
-              >
-              <a href="service-blood-parasites.html" class="dropdown-link"
-                >Ký sinh trùng máu</a
-              >
-              <a href="service-ultrasound.html" class="dropdown-link"
-                >Siêu âm</a
-              >
-              <a href="service-antibiogram.html" class="dropdown-link"
-                >Kháng sinh đồ</a
-              >
-              <a href="service-surgery.html" class="dropdown-link"
-                >Phẫu thuật</a
-              >
-              <a href="service-vaccination.html" class="dropdown-link"
-                >Tiêm ngừa vắc xin</a
-              >
-              <a href="pet-shop.html" class="dropdown-link">Pet Shop & Spa</a>
-            </div>
-          </div>
-
-          <div class="nav-item">
-            <a href="gallery.html" class="nav-link">Hình Ảnh</a>
-          </div>
-
-          <div class="nav-item">
-            <a href="blog.html" class="nav-link">Cẩm Nang</a>
-          </div>
-
-          <div class="nav-item">
-            <a href="contact.html" class="nav-link">Liên Hệ</a>
-          </div>
-        </nav>
-
-        <!-- Header Actions -->
-        <div class="header-actions">
-          <button class="btn-search" title="Tìm kiếm">
-            <svg
-              style="width: 20px; height: 20px"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              ></path>
-            </svg>
-          </button>
-
-          <button class="btn-cart" title="Giỏ hàng">
-            <svg
-              style="width: 20px; height: 20px"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-              ></path>
-            </svg>
-            <span class="cart-count" style="display: none">0</span>
-          </button>
-
-          <a
-            href="#bookingSection"
-            class="btn btn-primary btn-sm btn-rounded hide-for-small"
-          >
-            <span>Đặt lịch ngay</span>
+  <body class="home">
+    <!-- TOP HEADER -->
+    <header id="header" class="header">
+      <div class="container header-main">
+        <div class="header-inner">
+          <!-- Logo -->
+          <a href="index.html" class="logo" title="Phòng khám Thú Y PetCare">
+            <div class="logo-badge">🐾 PetCare</div>
+            <div class="logo-text">PetCare<span>Thú Y & Pet Care</span></div>
           </a>
 
-          <button class="mobile-toggle" aria-label="Mở menu">
-            <svg
-              style="width: 24px; height: 24px"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <!-- Desktop Navigation -->
+          <nav class="header-nav">
+            <div class="nav-item">
+              <a href="about-us.html" class="nav-link">
+                Giới Thiệu
+                <svg
+                  style="width: 14px; height: 14px"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="about-us.html" class="dropdown-link">Về Chúng Tôi</a>
+                </li>
+                <li>
+                  <a href="why-choose-us.html" class="dropdown-link"
+                    >Tại sao chọn PetCare</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav-item">
+              <a href="services.html" class="nav-link">
+                Dịch Vụ
+                <svg
+                  style="width: 14px; height: 14px"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a
+                    href="service-consultation-treatment.html"
+                    class="dropdown-link"
+                    >Tư vấn & Điều trị</a
+                  >
+                </li>
+                <li>
+                  <a href="service-blood-test.html" class="dropdown-link"
+                    >Xét nghiệm máu</a
+                  >
+                </li>
+                <li>
+                  <a href="service-blood-parasites.html" class="dropdown-link"
+                    >Xét nghiệm ký sinh trùng máu</a
+                  >
+                </li>
+                <li>
+                  <a href="service-ultrasound.html" class="dropdown-link"
+                    >Siêu âm</a
+                  >
+                </li>
+                <li>
+                  <a href="service-antibiogram.html" class="dropdown-link"
+                    >Kháng sinh đồ</a
+                  >
+                </li>
+                <li>
+                  <a href="service-surgery.html" class="dropdown-link"
+                    >Phẫu thuật</a
+                  >
+                </li>
+                <li>
+                  <a href="service-vaccination.html" class="dropdown-link"
+                    >Tiêm ngừa</a
+                  >
+                </li>
+                <li>
+                  <a href="pet-shop.html" class="dropdown-link">Pet Shop</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav-item">
+              <a href="gallery.html" class="nav-link">Hình Ảnh</a>
+            </div>
+            <div class="nav-item">
+              <a href="blog.html" class="nav-link">Cẩm Nang</a>
+            </div>
+            <div class="nav-item">
+              <a href="contact.html" class="nav-link">Liên Hệ</a>
+            </div>
+          </nav>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <button class="btn-search" title="Tìm kiếm" id="searchToggleBtn">
+              <svg
+                style="width: 20px; height: 20px"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </button>
+            <a href="pet-shop.html" class="btn-cart" title="Giỏ hàng">
+              <svg
+                style="width: 20px; height: 20px"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                ></path>
+              </svg>
+              <span class="cart-count" style="display: none">0</span>
+            </a>
+            <a
+              href="tel:0918708179"
+              class="button primary btn-sm hide-for-small"
+              >Hotline: 0918 708 179</a
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
+            <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Menu">
+              <svg
+                style="width: 26px; height: 26px"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- MOBILE SIDEBAR -->
-    <div class="sidebar-overlay"></div>
-    <div class="mobile-sidebar">
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
       <div
         style="
           display: flex;
@@ -236,12 +201,15 @@
           border-bottom: 1px solid var(--border-color);
         "
       >
-        <div class="logo" style="font-size: 1.2rem">
-          <span style="color: var(--primary); font-weight: 800">PetCare</span>
+        <div class="logo" style="font-size: 1.3rem">
+          <span style="color: var(--primary-color); font-weight: 800"
+            >PetCare</span
+          >
         </div>
         <button
-          class="close-sidebar-btn"
-          style="font-size: 1.5rem; color: var(--text-muted)"
+          class="modal-close"
+          id="closeSidebarBtn"
+          style="position: static"
         >
           &times;
         </button>
@@ -253,1147 +221,681 @@
           >Tại Sao Chọn PetCare</a
         >
         <a href="services.html" class="mobile-nav-link">Tất Cả Dịch Vụ</a>
-        <a
-          href="service-consultation-treatment.html"
-          class="mobile-nav-link"
-          style="padding-left: 26px; font-size: 0.9rem"
-          >• Tư vấn & Điều trị</a
-        >
-        <a
-          href="service-vaccination.html"
-          class="mobile-nav-link"
-          style="padding-left: 26px; font-size: 0.9rem"
-          >• Tiêm ngừa Vaccine</a
-        >
-        <a
-          href="service-surgery.html"
-          class="mobile-nav-link"
-          style="padding-left: 26px; font-size: 0.9rem"
-          >• Phẫu thuật thú y</a
-        >
-        <a href="pet-shop.html" class="mobile-nav-link">Pet Shop & Spa</a>
-        <a href="gallery.html" class="mobile-nav-link">Hình Ảnh Hoạt Động</a>
-        <a href="blog.html" class="mobile-nav-link">Cẩm Nang Nuôi Pet</a>
-        <a href="contact.html" class="mobile-nav-link">Liên Hệ & Đặt Lịch</a>
+        <a href="pet-shop.html" class="mobile-nav-link">Pet Shop</a>
+        <a href="gallery.html" class="mobile-nav-link">Hình Ảnh</a>
+        <a href="blog.html" class="mobile-nav-link">Cẩm Nang</a>
+        <a href="contact.html" class="mobile-nav-link">Liên Hệ</a>
       </div>
     </div>
 
     <main id="main">
-      <!-- HERO COVER SECTION -->
-      <section class="hero-section">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <div class="hero-tag">
-              <svg
-                style="width: 16px; height: 16px"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              Phòng khám Thú Y Thủ Dầu Một uy tín
-            </div>
-            <h1 class="hero-title">
-              Hơn cả sự hài lòng <br />
-              <span class="text-highlight">PetCare</span> đồng hành cùng Boss
-            </h1>
-            <p class="hero-desc">
-              Thú Y Thủ Dầu Một – PetCare là tập thể những bác sĩ trẻ, đầy nhiệt
-              huyết và giàu kinh nghiệm từ Sài Gòn trong lĩnh vực điều trị và
-              chăm sóc chuyên sâu cho thú cưng.
-            </p>
-            <div class="hero-actions">
-              <a
-                href="#bookingSection"
-                class="btn btn-primary btn-lg btn-rounded"
-              >
-                <span>Đặt lịch khám trực tuyến</span>
-                <svg
-                  style="width: 18px; height: 18px"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                href="tel:0918708179"
-                class="btn btn-outline btn-lg btn-rounded"
-              >
-                <svg
-                  style="width: 18px; height: 18px"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                  ></path>
-                </svg>
-                <span>Hotline: 0918 708 179</span>
-              </a>
-            </div>
-
-            <div class="hero-features">
-              <div class="hero-feature-item">
-                <div class="hero-feature-icon">✓</div>
-                <span>Khám & Chữa bệnh tận tâm</span>
-              </div>
-              <div class="hero-feature-item">
-                <div class="hero-feature-icon">✓</div>
-                <span>Xét nghiệm & Siêu âm tại chỗ</span>
-              </div>
-              <div class="hero-feature-item">
-                <div class="hero-feature-icon">✓</div>
-                <span>Phòng mổ vô trùng an toàn</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-visual">
-            <div
-              class="img-placeholder ratio-4-3"
-              style="box-shadow: var(--shadow-lg)"
-            >
-              <div class="img-badge">IMG</div>
-              <svg
-                class="img-icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.8"
-                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                ></path>
-              </svg>
-              <span class="img-caption"
-                >Bác sĩ Thú Y khám và chăm sóc chó mèo tại PetCare</span
-              >
-              <span class="img-sub">Hero Image (1200x800)</span>
-            </div>
-
-            <div class="hero-badge-card">
-              <div class="hero-badge-icon">
-                <svg
-                  style="width: 24px; height: 24px"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="hero-badge-text">
-                <h4>10.000+ Thú Cưng</h4>
-                <p>Được điều trị & chăm sóc khỏe mạnh</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- QUICK BOOKING BAR -->
-      <section class="container booking-bar-section" id="bookingSection">
-        <div class="booking-card">
-          <div class="booking-card-header">
-            <div class="booking-card-title">
-              <div class="hero-feature-icon" style="width: 36px; height: 36px">
-                📅
-              </div>
-              <div>
-                <h3>Đặt lịch hẹn khám trực tuyến</h3>
-                <p style="color: var(--text-muted); font-size: 0.88rem">
-                  Tiết kiệm thời gian, ưu tiên khám ngay không cần chờ đợi
-                </p>
-              </div>
-            </div>
-            <span class="badge badge-primary"
-              >Tiếp nhận nhanh trong 5 phút</span
-            >
-          </div>
-
-          <form id="quickBookingForm">
-            <div class="booking-form-grid">
-              <div class="form-group">
-                <label class="form-label">Loại thú cưng</label>
-                <select class="form-control" name="petType" required>
-                  <option value="Chó">Chó cưng 🐶</option>
-                  <option value="Mèo">Mèo cưng 🐱</option>
-                  <option value="Khác">Thú cưng khác</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Tên thú cưng</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="petName"
-                  placeholder="Ví dụ: Bé Milo"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Dịch vụ mong muốn</label>
-                <select class="form-control" name="service" required>
-                  <option value="Khám bệnh & Điều trị">
-                    Khám bệnh & Điều trị
-                  </option>
-                  <option value="Tiêm ngừa vắc xin">Tiêm ngừa vắc xin</option>
-                  <option value="Siêu âm & Xét nghiệm máu">
-                    Siêu âm & Xét nghiệm máu
-                  </option>
-                  <option value="Phẫu thuật & Triệt sản">
-                    Phẫu thuật & Triệt sản
-                  </option>
-                  <option value="Spa & Tắm sấy vệ sinh">
-                    Spa & Tắm sấy vệ sinh
-                  </option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Ngày hẹn khám</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  name="bookingDate"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Giờ khám dự kiến</label>
-                <select class="form-control" name="bookingTime" required>
-                  <option value="08:30">08:30 Sáng</option>
-                  <option value="09:30">09:30 Sáng</option>
-                  <option value="11:00">11:00 Trưa</option>
-                  <option value="14:00">14:00 Chiều</option>
-                  <option value="16:30">16:30 Chiều</option>
-                  <option value="18:30">18:30 Tối</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Họ tên chủ nuôi</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="ownerName"
-                  placeholder="Tên của bạn"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Số điện thoại liên hệ</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  name="ownerPhone"
-                  placeholder="Số điện thoại"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="height: 48px; border-radius: var(--radius-sm)"
-                >
-                  <span>Xác nhận đặt lịch</span>
-                  <svg
-                    style="width: 18px; height: 18px"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <!-- SERVICES OVERVIEW SECTION -->
-      <section class="section" id="servicesSection">
+      <!-- SECTION 1: HERO (Hơn cả sự hài lòng) -->
+      <section class="section homepage-hero">
         <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">Dịch Vụ Chuyên Nghiệp</span>
-            <h2 class="section-title">Đầy đủ dịch vụ cho thú cưng của bạn</h2>
+          <div class="hero-grid">
+            <!-- Left Column -->
+            <div>
+              <div class="homepage-top-title">
+                <h1>Hơn cả sự hài lòng</h1>
+              </div>
+              <div class="homepage-top-subtitle">
+                <p>
+                  PetCare là tập thể thú y Thủ Dầu Một luôn hoạt động với tôn
+                  chỉ:<br /><strong>Uy tín. Chất lượng. Tận tâm</strong>
+                </p>
+              </div>
+              <a
+                href="about-us.html"
+                class="button primary"
+                style="border-radius: 10px"
+              >
+                <span>Giới thiệu về PetCare</span>
+              </a>
+
+              <div class="hero-illustration">
+                <div
+                  class="img-placeholder"
+                  style="padding: 15px; aspect-ratio: 16/9; margin-top: 24px"
+                >
+                  <div class="img-badge">IMG</div>
+                  <span class="img-caption" style="font-size: 0.85rem"
+                    >Animation Lottie: Chăm sóc chó mèo</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div>
+              <div class="img-placeholder ratio-4-3">
+                <div class="img-badge">IMG</div>
+                <svg
+                  class="img-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span class="img-caption"
+                  >Phòng khám thú y Thủ Dầu Một PetCare</span
+                >
+                <span class="img-sub"
+                  >Thu-Y-Thu-Dau-Mot-PetCare.webp (800x884)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: CUSTOMER REVIEWS (Đánh giá từ khách hàng) -->
+      <section class="section homepage-reviews">
+        <div class="container">
+          <div class="reviews-header">
+            <h2 class="section-title">Đánh giá từ khách hàng</h2>
             <p class="section-desc">
-              Phòng khám thú y PetCare cung cấp giải pháp y tế và chăm sóc toàn
-              diện chuẩn y khoa cho mọi bé chó mèo.
+              Thú y Thủ Dầu Một – PetCare luôn nỗ lực để nhận được những đánh
+              giá tốt nhất từ quý khách hàng. Và đó cũng chính là nguồn động lực
+              lớn nhất của chúng tôi.
             </p>
           </div>
 
-          <div class="service-filter-tabs">
-            <button class="filter-tab active" data-filter="all">
-              Tất cả dịch vụ
-            </button>
-            <button class="filter-tab" data-filter="treatment">
-              Khám & Điều trị
-            </button>
-            <button class="filter-tab" data-filter="diagnostics">
-              Xét nghiệm & Siêu âm
-            </button>
-            <button class="filter-tab" data-filter="surgery">Phẫu thuật</button>
-            <button class="filter-tab" data-filter="prevention">
-              Tiêm ngừa
-            </button>
-            <button class="filter-tab" data-filter="shop">
-              Pet Shop & Spa
-            </button>
-          </div>
-
-          <div class="services-grid">
-            <!-- Service 1: Tư vấn & Điều trị -->
-            <div class="service-card" data-category="treatment">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Bác sĩ khám tư vấn điều trị chó mèo</span
-                >
-              </div>
-              <div class="service-card-body">
-                <h3>
-                  <a href="service-consultation-treatment.html"
-                    >Tư vấn & Điều trị</a
-                  >
-                </h3>
-                <p>
-                  Với kinh nghiệm của bác sĩ trình độ chuyên môn cao, nhiều năm
-                  kinh nghiệm làm việc tại Sài Gòn.
-                </p>
-                <div class="service-card-footer">
-                  <a
-                    href="service-consultation-treatment.html"
-                    class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
+          <!-- TrustIndex Rating Bar -->
+          <div class="trustindex-badge">
+            <div class="trustindex-rating">
+              <span class="rating-score">5.0</span>
+              <div class="google-stars">★★★★★</div>
             </div>
-
-            <!-- Service 2: Xét nghiệm máu -->
-            <div class="service-card" data-category="diagnostics">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Xét nghiệm máu tự động cho thú cưng</span
-                >
-              </div>
-              <div class="service-card-body">
-                <h3><a href="service-blood-test.html">Xét nghiệm máu</a></h3>
-                <p>
-                  Xét nghiệm máu thú y giúp phát hiện và ngăn ngừa các bệnh lý
-                  gan, thận nguy hiểm tiềm tàng.
-                </p>
-                <div class="service-card-footer">
-                  <a href="service-blood-test.html" class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
+            <div class="rating-count">
+              Dựa trên <strong>394+ đánh giá thực tế</strong> của khách hàng
             </div>
-
-            <!-- Service 3: Xét nghiệm ký sinh trùng máu -->
-            <div class="service-card" data-category="diagnostics">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Kính hiển vi soi ký sinh trùng máu</span
-                >
-              </div>
-              <div class="service-card-body">
-                <h3>
-                  <a href="service-blood-parasites.html">Ký sinh trùng máu</a>
-                </h3>
-                <p>
-                  Chẩn đoán và xác định sự hiện diện của các loại ký sinh trùng
-                  Babesia, giun tim truyền nhiễm.
-                </p>
-                <div class="service-card-footer">
-                  <a href="service-blood-parasites.html" class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 4: Siêu âm -->
-            <div class="service-card" data-category="diagnostics">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Máy siêu âm Doppler màu cho chó mèo</span
-                >
-              </div>
-              <div class="service-card-body">
-                <h3>
-                  <a href="service-ultrasound.html">Siêu âm thai & ổ bụng</a>
-                </h3>
-                <p>
-                  Gồm có siêu âm thai định kỳ và siêu âm giúp phát hiện các bệnh
-                  ở mô mềm, sỏi thận, bàng quang.
-                </p>
-                <div class="service-card-footer">
-                  <a href="service-ultrasound.html" class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 5: Kháng sinh đồ -->
-            <div class="service-card" data-category="diagnostics">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Kỹ thuật nuôi cấy kháng sinh đồ</span>
-              </div>
-              <div class="service-card-body">
-                <h3><a href="service-antibiogram.html">Kháng sinh đồ</a></h3>
-                <p>
-                  Kháng sinh đồ giúp lựa chọn đúng loại thuốc điều trị nhiễm
-                  trùng vi khuẩn hiệu quả, tránh kháng thuốc.
-                </p>
-                <div class="service-card-footer">
-                  <a href="service-antibiogram.html" class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 6: Phẫu thuật -->
-            <div class="service-card" data-category="surgery">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Phòng phẫu thuật vô trùng hiện đại</span
-                >
-              </div>
-              <div class="service-card-body">
-                <h3><a href="service-surgery.html">Phẫu thuật Thú Y</a></h3>
-                <p>
-                  Triệt sản thẩm mỹ không đau, mổ đẻ cấp cứu, phẫu thuật chỉnh
-                  hình xương khớp an toàn tuyệt đối.
-                </p>
-                <div class="service-card-footer">
-                  <a href="service-surgery.html" class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 7: Tiêm ngừa -->
-            <div class="service-card" data-category="prevention">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Tiêm phòng vắc xin chính hãng</span>
-              </div>
-              <div class="service-card-body">
-                <h3>
-                  <a href="service-vaccination.html">Tiêm ngừa vắc xin</a>
-                </h3>
-                <p>
-                  Tiêm chủng vắc xin 7 bệnh cho chó, 4 bệnh cho mèo và vắc xin
-                  dại là biện pháp phòng bệnh hiệu quả nhất.
-                </p>
-                <div class="service-card-footer">
-                  <a href="service-vaccination.html" class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 8: Pet Shop -->
-            <div class="service-card" data-category="shop">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Khu vực Pet Shop & phụ kiện</span>
-              </div>
-              <div class="service-card-body">
-                <h3><a href="pet-shop.html">Pet Shop & Spa Grooming</a></h3>
-                <p>
-                  Cung cấp thức ăn dinh dưỡng, phụ kiện, cát vệ sinh và dịch vụ
-                  tắm sấy cắt tỉa lông tạo kiểu.
-                </p>
-                <div class="service-card-footer">
-                  <a href="pet-shop.html" class="service-link"
-                    >Chi tiết dịch vụ →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center" style="margin-top: 40px">
-            <a href="services.html" class="btn btn-primary btn-rounded">
-              <span>Xem tất cả bảng giá dịch vụ</span>
-              <svg
-                style="width: 16px; height: 16px"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+            <div class="google-logo-badge">
+              <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
+                  fill="#4285F4"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
+                />
               </svg>
+              Google Reviews
+            </div>
+          </div>
+
+          <!-- 6 Real Review Cards -->
+          <div class="reviews-grid">
+            <!-- Card 1 -->
+            <div class="review-item-card">
+              <div class="review-card-header">
+                <div class="review-avatar">J</div>
+                <div class="review-user-info">
+                  <span class="review-user-name">Jet</span>
+                  <span class="review-verified">✓ Đã xác thực trên Google</span>
+                </div>
+              </div>
+              <div class="google-stars">★★★★★</div>
+              <p class="review-text">
+                "Bác sĩ đội ngũ chuyên nghiệp và tận tâm. Yên tâm khi mang pet
+                đến đây khám. Mèo mình bệnh rất nặng tưởng như không ổn nay đã
+                gần như khỏi bệnh, đánh giá 5 sao!"
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="review-item-card">
+              <div class="review-card-header">
+                <div class="review-avatar">Q</div>
+                <div class="review-user-info">
+                  <span class="review-user-name">Quyen Vo</span>
+                  <span class="review-verified">✓ Đã xác thực trên Google</span>
+                </div>
+              </div>
+              <div class="google-stars">★★★★★</div>
+              <p class="review-text">
+                "Bác sĩ An chăm sóc bé tận tâm lắm luôn ạ, cảm ơn bác sĩ rất
+                nhiều ạ 🍀 Phòng khám hiện đại và rất sạch sẽ."
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="review-item-card">
+              <div class="review-card-header">
+                <div class="review-avatar">Ý</div>
+                <div class="review-user-info">
+                  <span class="review-user-name">Ý Nguyễn</span>
+                  <span class="review-verified">✓ Đã xác thực trên Google</span>
+                </div>
+              </div>
+              <div class="google-stars">★★★★★</div>
+              <p class="review-text">
+                "Phòng khám PetCare rất sạch sẽ và chuyên nghiệp. Bác sĩ tư vấn
+                kỹ, tận tâm nên mình rất yên tâm khi đưa bé tới khám. Nhân viên
+                thân thiện, hỗ trợ nhiệt tình. Sẽ tiếp tục ủng hộ lâu dài!"
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="review-item-card">
+              <div class="review-card-header">
+                <div class="review-avatar">T</div>
+                <div class="review-user-info">
+                  <span class="review-user-name">Trinh Nguyen</span>
+                  <span class="review-verified">✓ Đã xác thực trên Google</span>
+                </div>
+              </div>
+              <div class="google-stars">★★★★★</div>
+              <p class="review-text">
+                "Phòng khám sạch sẽ, bác sĩ tận tâm và điều trị tốt, 2 bé nhà
+                mình đều theo dõi sức khoẻ và thăm khám ở đây, highly recommend
+                cho ba mẹ nào ở bình dương thì đến đây thăm khám cho các con
+                nhé."
+              </p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="review-item-card">
+              <div class="review-card-header">
+                <div class="review-avatar">B</div>
+                <div class="review-user-info">
+                  <span class="review-user-name">Cửa Hàng Đồ Chơi Bảo Bảo</span>
+                  <span class="review-verified">✓ Đã xác thực trên Google</span>
+                </div>
+              </div>
+              <div class="google-stars">★★★★★</div>
+              <p class="review-text">
+                "Mấy bé nhà mình đều khám, chích ngừa và triệt sản ở đây. Bác sĩ
+                tư vấn nhiệt tình theo dõi và nhắn tin tình trạng của bé liên
+                tục. Môi trường sạch sẽ và chuyên nghiệp mọi người nên ghé."
+              </p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="review-item-card">
+              <div class="review-card-header">
+                <div class="review-avatar">T</div>
+                <div class="review-user-info">
+                  <span class="review-user-name">Thư Nguyễn</span>
+                  <span class="review-verified">✓ Đã xác thực trên Google</span>
+                </div>
+              </div>
+              <div class="google-stars">★★★★★</div>
+              <p class="review-text">
+                "Bác sĩ rất tận tâm trong quá trình khám mèo ạ. Mèo nhà e bị
+                bệnh trị ở đây khi về nhà bsi luôn nhiệt tình hỏi thăm xem tình
+                trạng của bé mèo e rất thích điều đó ạ 🫶🏻🫶🏻"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: GALLERY & DỊCH VỤ (Hình ảnh hoạt động) -->
+      <section class="section homepage-gallery">
+        <!-- Bottom Wave shape divider -->
+        <div class="ux-shape-divider ux-shape-divider--bottom">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              class="ux-shape-fill"
+              d="M321.39 63.56c58 10.79 114.16 30.13 172 41.86 82.39 16.72 168.19 17.73 250.45.39C823.78 89 906.67 48 985.66 27.17c70.05-18.48 146.53-26.09 214.34-3V120H0V92.65a600.21 600.21 0 01321.39-29.09z"
+            />
+          </svg>
+        </div>
+
+        <div class="container section-content">
+          <div class="section-header">
+            <h2 class="section-title">Hình ảnh hoạt động</h2>
+            <p class="section-desc">
+              Không gian khám chữa bệnh và những khoảnh khắc chăm sóc các bé
+              cưng tại PetCare
+            </p>
+          </div>
+
+          <div class="gallery-masonry-grid">
+            <div class="gallery-card">
+              <div class="img-placeholder ratio-1-1">
+                <div class="img-badge">IMG</div>
+                <span class="img-caption">Chẩn đoán điều trị bệnh chó mèo</span>
+                <span class="img-sub">Homepage-800x800-4</span>
+              </div>
+            </div>
+
+            <div class="gallery-card">
+              <div class="img-placeholder ratio-1-1">
+                <div class="img-badge">IMG</div>
+                <span class="img-caption">Xét nghiệm ký sinh trùng máu</span>
+                <span class="img-sub">Homepage-800x800-3</span>
+              </div>
+            </div>
+
+            <div class="gallery-card">
+              <div class="img-placeholder ratio-1-1">
+                <div class="img-badge">IMG</div>
+                <span class="img-caption">Tư vấn phác đồ điều trị</span>
+                <span class="img-sub">Homepage-800x800-1</span>
+              </div>
+            </div>
+
+            <div class="gallery-card">
+              <div class="img-placeholder ratio-1-1">
+                <div class="img-badge">IMG</div>
+                <span class="img-caption">Máy siêu âm công nghệ mới</span>
+                <span class="img-sub">Homepage-800x800-2</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center">
+            <a
+              href="gallery.html"
+              class="button primary"
+              style="border-radius: 10px"
+            >
+              <span>Thêm hình ảnh</span>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- COST ESTIMATOR TOOL -->
-      <section class="section bg-light" id="calculatorSection">
+      <!-- SECTION 4: WHAT TO EXPECT (Kỳ vọng gì từ PetCare) -->
+      <section class="section homepage-expect">
         <div class="container">
           <div class="section-header">
-            <span class="section-subtitle">Minh Bạch Chi Phí</span>
-            <h2 class="section-title">Dự tính chi phí khám chữa bệnh nhanh</h2>
-            <p class="section-desc">
-              Chọn loại thú cưng và cân nặng để xem ước tính chi phí chuẩn xác
-              trước khi đưa bé đến phòng khám.
-            </p>
+            <h2 class="section-title">Kỳ vọng gì từ PetCare</h2>
           </div>
 
-          <div class="estimator-card">
-            <div class="estimator-grid">
-              <div class="calculator-controls">
-                <div class="form-group">
-                  <label class="form-label">Loại thú cưng:</label>
-                  <div class="pet-type-selector">
-                    <button
-                      type="button"
-                      class="pet-type-btn active"
-                      data-type="dog"
-                    >
-                      <span>🐶 Cún cưng (Chó)</span>
-                    </button>
-                    <button type="button" class="pet-type-btn" data-type="cat">
-                      <span>🐱 Mèo cưng</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label">Gói dịch vụ cần thực hiện:</label>
-                  <select class="form-control" id="calcService">
-                    <option value="kham-tong-quat">
-                      Khám lâm sàng tổng quát
-                    </option>
-                    <option value="tiem-ngua">
-                      Tiêm phòng vắc xin định kỳ
-                    </option>
-                    <option value="triet-san-duc">Triệt sản đực</option>
-                    <option value="triet-san-cai">Triệt sản cái thẩm mỹ</option>
-                    <option value="sieu-am">Siêu âm màu thai / ổ bụng</option>
-                    <option value="xet-nghiem-mau">
-                      Xét nghiệm máu tổng quát
-                    </option>
-                    <option value="spa-tam-say">
-                      Gói Spa tắm sấy vệ sinh toàn diện
-                    </option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
-                    <label class="form-label">Cân nặng thú cưng:</label>
-                    <span
-                      id="calcWeightDisplay"
-                      style="
-                        font-weight: 700;
-                        color: var(--primary);
-                        font-size: 1.05rem;
-                      "
-                      >5 kg</span
-                    >
-                  </div>
-                  <input
-                    type="range"
-                    class="form-control"
-                    id="calcWeight"
-                    min="1"
-                    max="40"
-                    value="5"
-                    step="0.5"
-                    style="padding: 0; cursor: pointer"
-                  />
-                </div>
-              </div>
-
-              <div class="estimator-result-box">
-                <span
-                  style="
-                    font-size: 0.9rem;
-                    text-transform: uppercase;
-                    letter-spacing: 0.05em;
-                    opacity: 0.9;
-                  "
-                  >Chi phí ước tính:</span
-                >
-                <div class="estimator-result-price" id="calcPriceResult">
-                  100.000đ
-                </div>
-                <p
-                  id="calcBreakdown"
-                  style="font-size: 0.85rem; opacity: 0.9; margin-bottom: 20px"
-                >
-                  Ước tính cho: Chó (~5kg) • Khám lâm sàng
-                </p>
-                <a
-                  href="#bookingSection"
-                  class="btn btn-white btn-rounded"
-                  style="width: 100%"
-                >
-                  <span>Đặt lịch với mức giá này</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHY CHOOSE US & CORE VALUES -->
-      <section class="section">
-        <div class="container">
           <div class="expect-grid">
-            <div>
-              <span class="section-subtitle">Kỳ Vọng Gì Từ PetCare</span>
-              <h2 class="section-title" style="margin-bottom: 24px">
-                3 Giá trị cốt lõi chúng tôi luôn hướng tới
-              </h2>
-              <div class="expect-list">
-                <div class="expect-item">
-                  <h3>01. Uy Tín</h3>
-                  <p>
-                    Đội ngũ bác sĩ rất uy tín, có nhiều năm kinh nghiệm làm việc
-                    tại các bệnh viện thú y lớn tại Sài Gòn. Được đông đảo khách
-                    hàng tin tưởng.
-                  </p>
-                </div>
-                <div class="expect-item">
-                  <h3>02. Chất Lượng</h3>
-                  <p>
-                    PetCare là phòng khám thú y chuyên về chăm sóc và điều trị.
-                    Ở đây chúng tôi luôn đặt chất lượng điều trị và sức khỏe của
-                    các bé lên hàng đầu.
-                  </p>
-                </div>
-                <div class="expect-item">
-                  <h3>03. Tận Tâm</h3>
-                  <p>
-                    Chúng tôi hiểu rằng bên cạnh y thuật giỏi thì chính sự nỗ
-                    lực từ trong tâm sẽ là liều thuốc tinh thần mạnh mẽ nhất cho
-                    các bạn nhỏ.
-                  </p>
-                </div>
+            <!-- Left Column (3 items) -->
+            <div class="expect-list">
+              <div class="expect-item">
+                <h3>Uy tín</h3>
+                <p>
+                  Đội ngũ bác sĩ rất uy tín, có nhiều năm kinh nghiệm làm việc
+                  tại các bệnh viện thú y lớn tại Sài Gòn. Được rất nhiều khách
+                  hàng tin tưởng và đánh giá cao.
+                </p>
+              </div>
+
+              <div class="expect-item">
+                <h3>Chất lượng</h3>
+                <p>
+                  PetCare là phòng khám thú y chuyên về chăm sóc và điều trị. Ở
+                  đây chúng tôi luôn đặt chất lượng điều trị lên hàng đầu.
+                </p>
+              </div>
+
+              <div class="expect-item">
+                <h3>Tận tâm</h3>
+                <p>
+                  Chúng tôi hiểu rằng bên cạnh chất lượng điều trị thì chính sự
+                  nỗ lực từ trong tâm sẽ là liều thuốc tinh thần mạnh mẽ nhất
+                  dành cho những bạn nhỏ khi đến với PetCare.
+                </p>
               </div>
             </div>
 
+            <!-- Right Column (Green Quote Box) -->
             <div>
               <div class="expect-quote-box">
-                <div class="expect-quote-text">
+                <p class="quote-heading">
                   "Phòng khám 100 điểm không có nhưng. Bác sĩ nhiệt tình, chu
                   đáo, giá cả phải chăng. Mấy bé nhà mình có vấn đề gì là các
-                  bác sĩ lo hết tận tâm."
-                </div>
+                  bác sĩ lo hết."
+                </p>
+                <div class="quote-author">— Chau Anh Hoang (Google Maps)</div>
                 <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                    margin-bottom: 20px;
-                  "
+                  class="img-placeholder ratio-4-3"
+                  style="background: #ffffff; margin-top: 10px"
+                >
+                  <div class="img-badge">IMG</div>
+                  <span class="img-caption">Bé mèo cưng khỏe mạnh bên chủ</span>
+                  <span class="img-sub"
+                    >Homepage-Girl-with-cat.webp (604x732)</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: BLOG (Chăm sóc thú cưng) -->
+      <section class="section homepage-blog">
+        <!-- Bottom Wave Shape Divider in Black -->
+        <div class="ux-shape-divider ux-shape-divider--bottom">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              style="fill: rgb(0, 0, 0)"
+              d="M321.39 63.56c58 10.79 114.16 30.13 172 41.86 82.39 16.72 168.19 17.73 250.45.39C823.78 89 906.67 48 985.66 27.17c70.05-18.48 146.53-26.09 214.34-3V120H0V92.65a600.21 600.21 0 01321.39-29.09z"
+            />
+          </svg>
+        </div>
+
+        <div class="container section-content">
+          <div class="section-header">
+            <h2 class="section-title">Chăm sóc thú cưng</h2>
+            <p class="section-desc">
+              Cẩm nang y khoa và kiến thức hữu ích từ đội ngũ bác sĩ PetCare
+            </p>
+          </div>
+
+          <div class="blog-featured-grid">
+            <!-- Big Left Post -->
+            <div class="blog-featured-left">
+              <div class="img-placeholder ratio-16-9">
+                <div class="img-badge">IMG</div>
+                <span class="img-caption"
+                  >Tiêm ngừa vắc xin cho chó mèo tại PetCare</span
+                >
+                <span class="img-sub"
+                  >tiem-ngua-cho-meo-tai-PetCare.webp (1672x941)</span
+                >
+              </div>
+              <div style="padding: 24px">
+                <h3 class="blog-card-title">
+                  <a href="blog-detail.html"
+                    >Tiêm ngừa chó mèo: 1 lần có miễn dịch mãi mãi?</a
+                  >
+                </h3>
+                <p style="color: #666; font-size: 0.92rem; margin-bottom: 16px">
+                  Nhiều người nuôi lầm tưởng chỉ cần tiêm vắc xin 1 lần là thú
+                  cưng sẽ miễn dịch cả đời. Tìm hiểu cơ chế suy giảm kháng thể
+                  và tầm quan trọng của mũi tiêm nhắc lại hàng năm.
+                </p>
+                <a href="blog-detail.html" class="button is-link">Đọc tiếp →</a>
+              </div>
+            </div>
+
+            <!-- Right Column with 2 Stacked Posts -->
+            <div class="blog-featured-right">
+              <div class="blog-mini-card">
+                <div
+                  class="img-placeholder"
+                  style="border-radius: 0; border: none"
                 >
                   <div
-                    style="
-                      width: 44px;
-                      height: 44px;
-                      border-radius: 50%;
-                      background: var(--primary);
-                      color: white;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      font-weight: 700;
-                    "
+                    class="img-badge"
+                    style="font-size: 0.7rem; padding: 2px 8px"
                   >
-                    CA
+                    IMG
                   </div>
-                  <div>
-                    <h4 style="font-size: 1rem; color: var(--dark)">
-                      Châu Anh Hoàng
-                    </h4>
-                    <p
-                      style="
-                        font-size: 0.8rem;
-                        color: var(--text-muted);
-                        margin: 0;
-                      "
+                </div>
+                <div class="blog-card-content">
+                  <h4 class="blog-card-title">
+                    <a href="blog-detail.html"
+                      >Những Mũi Tiêm Ngừa Quan Trọng Không Nên Bỏ Qua Cho Cún
+                      Con</a
                     >
-                      Đánh giá 5 sao trên Google Maps
-                    </p>
+                  </h4>
+                  <p style="font-size: 0.85rem; color: #666; margin: 0">
+                    Lịch tiêm phòng chó con theo từng giai đoạn phát triển.
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-mini-card">
+                <div
+                  class="img-placeholder"
+                  style="border-radius: 0; border: none"
+                >
+                  <div
+                    class="img-badge"
+                    style="font-size: 0.7rem; padding: 2px 8px"
+                  >
+                    IMG
                   </div>
                 </div>
+                <div class="blog-card-content">
+                  <h4 class="blog-card-title">
+                    <a href="blog-detail.html"
+                      >Siêu Âm Chó Mèo: 7 Dấu Hiệu Cảnh Báo Không Nên Bỏ Qua</a
+                    >
+                  </h4>
+                  <p style="font-size: 0.85rem; color: #666; margin: 0">
+                    Nhận biết sớm các bệnh lý ổ bụng và mô mềm ở thú cưng.
+                  </p>
+                </div>
+              </div>
 
-                <div class="img-placeholder ratio-16-9">
-                  <div class="img-badge">IMG</div>
-                  <span class="img-caption"
-                    >Khách hàng và thú cưng vui vẻ tại PetCare</span
+              <div class="blog-mini-card">
+                <div
+                  class="img-placeholder"
+                  style="border-radius: 0; border: none"
+                >
+                  <div
+                    class="img-badge"
+                    style="font-size: 0.7rem; padding: 2px 8px"
                   >
+                    IMG
+                  </div>
+                </div>
+                <div class="blog-card-content">
+                  <h4 class="blog-card-title">
+                    <a href="blog-detail.html"
+                      >Bệnh Care Ở Chó Và Các Giai Đoạn Chính Cần Lưu Ý</a
+                    >
+                  </h4>
+                  <p style="font-size: 0.85rem; color: #666; margin: 0">
+                    Phương pháp chẩn đoán và chăm sóc cún bị nhiễm virus Care.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- BLACKBOX SECTION -->
-      <section class="blackbox-section">
-        <div class="container blackbox-grid">
-          <div>
-            <span class="blackbox-tag">Không chỉ là phòng khám</span>
-            <h2 class="blackbox-title">
-              Chúng tôi ở đây để giúp bạn & thú cưng
-            </h2>
-            <div class="blackbox-points">
-              <div class="blackbox-point-item">
-                <svg fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span
-                  >Luôn đồng hành cùng bạn trong việc chăm sóc và điều trị cho
-                  thú cưng như thành viên gia đình.</span
-                >
-              </div>
-              <div class="blackbox-point-item">
-                <svg fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span
-                  >Luôn giải đáp những thắc mắc của bạn một cách nhanh nhất có
-                  thể qua Hotline và Zalo.</span
-                >
-              </div>
-              <div class="blackbox-point-item">
-                <svg fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span
-                  >Luôn chân thành lắng nghe và đón nhận những góp ý một cách
-                  tích cực để hoàn thiện chất lượng.</span
-                >
-              </div>
-            </div>
-            <div style="margin-top: 30px">
-              <a href="about-us.html" class="btn btn-primary btn-rounded"
-                >Tìm hiểu thêm về PetCare</a
-              >
-            </div>
-          </div>
-
-          <div>
-            <div class="img-placeholder img-placeholder-dark ratio-1-1">
-              <div class="img-badge">IMG</div>
-              <svg
-                class="img-icon"
-                style="color: var(--accent-lime)"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.8"
-                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-              <span class="img-caption"
-                >Bác sĩ giỏi chuyên môn và nhiệt tình chăm sóc chó mèo tại
-                PetCare</span
-              >
-              <span class="img-sub">Chân dung Bác Sĩ Trưởng Phòng Khám</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PHOTO GALLERY HIGHLIGHTS -->
-      <section class="section bg-soft-pink">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">Hình Ảnh Thực Tế</span>
-            <h2 class="section-title">Hình ảnh hoạt động tại PetCare</h2>
-            <p class="section-desc">
-              Không gian phòng khám sạch sẽ, máy móc hiện đại và những khoảnh
-              khắc đáng yêu của các bạn nhỏ.
-            </p>
-          </div>
-
-          <div
-            class="gallery-grid"
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-              gap: 16px;
-            "
-          >
-            <div class="gallery-item">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Chẩn đoán điều trị bệnh chó mèo tại phòng khám PetCare</span
-                >
-              </div>
-            </div>
-            <div class="gallery-item">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Chó mèo được xét nghiệm ký sinh trùng máu chuẩn xác</span
-                >
-              </div>
-            </div>
-            <div class="gallery-item">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Tư vấn phác đồ điều trị tận tình cho chủ nuôi</span
-                >
-              </div>
-            </div>
-            <div class="gallery-item">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Máy siêu âm công nghệ mới cho chó mèo tại PetCare</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center" style="margin-top: 30px">
-            <a href="gallery.html" class="btn btn-primary btn-rounded"
-              >Xem thêm hình ảnh hoạt động</a
+          <div style="text-align: center">
+            <a
+              href="blog.html"
+              class="button primary"
+              style="border-radius: 10px"
             >
+              <span>Thêm bài viết</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- PET CARE BLOG HIGHLIGHTS -->
-      <section class="section">
+      <!-- SECTION 6: BLACKBOX (Không chỉ là phòng khám - Chúng tôi ở đây để giúp bạn) -->
+      <section class="section homepage-blackbox">
         <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">Cẩm Nang Thú Cưng</span>
-            <h2 class="section-title">Kiến thức chăm sóc sức khỏe cho Boss</h2>
-            <p class="section-desc">
-              Những lưu ý y khoa và cẩm nang nuôi dưỡng hữu ích được chia sẻ bởi
-              đội ngũ bác sĩ PetCare.
-            </p>
-          </div>
+          <div class="blackbox-grid">
+            <!-- Left Column -->
+            <div>
+              <span class="blackbox-tag">Không chỉ là phòng khám</span>
+              <h2 class="blackbox-title">Chúng tôi ở đây để giúp bạn</h2>
 
-          <div class="blog-grid">
-            <div class="blog-card">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Tiêm ngừa chó mèo tại PetCare</span>
-              </div>
-              <div class="blog-card-body">
-                <div class="blog-date">📅 24/06/2026 • BS. Nguyễn Quốc An</div>
-                <h3 class="blog-title">
-                  <a href="blog-detail.html"
-                    >Tiêm ngừa chó mèo: 1 lần có miễn dịch mãi mãi không?</a
-                  >
-                </h3>
-                <p class="blog-excerpt">
-                  Nhiều chủ nuôi lầm tưởng chỉ cần tiêm vắc xin 1 lần là thú
-                  cưng sẽ miễn dịch cả đời. Tìm hiểu lịch tiêm nhắc lại...
-                </p>
-                <a href="blog-detail.html" class="service-link"
-                  >Đọc bài viết →</a
-                >
+              <div class="blackbox-list">
+                <div class="blackbox-item">
+                  <span class="blackbox-icon">●</span>
+                  <p>
+                    Luôn đồng hành cùng bạn trong việc chăm sóc và điều trị cho
+                    thú cưng.
+                  </p>
+                </div>
+                <div class="blackbox-item">
+                  <span class="blackbox-icon">●</span>
+                  <p>
+                    Luôn giải đáp những thắc mắc của bạn một cách nhanh nhất có
+                    thể.
+                  </p>
+                </div>
+                <div class="blackbox-item">
+                  <span class="blackbox-icon">●</span>
+                  <p>
+                    Luôn chân thành lắng nghe và đón nhận những góp ý một cách
+                    tích cực.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="blog-card">
-              <div class="img-placeholder ratio-16-9">
+            <!-- Right Column -->
+            <div>
+              <div
+                class="img-placeholder ratio-1-1"
+                style="background: #111111; border-color: #333333"
+              >
                 <div class="img-badge">IMG</div>
-                <span class="img-caption">Lịch tiêm phòng cho cún con</span>
-              </div>
-              <div class="blog-card-body">
-                <div class="blog-date">📅 20/06/2026 • BS. Trần Mai Linh</div>
-                <h3 class="blog-title">
-                  <a href="blog-detail.html"
-                    >Những Mũi Tiêm Ngừa Quan Trọng Không Nên Bỏ Qua Cho Cún
-                    Con</a
-                  >
-                </h3>
-                <p class="blog-excerpt">
-                  Giai đoạn từ 6-8 tuần tuổi là thời điểm vàng để bắt đầu tiêm
-                  vắc xin phòng các bệnh Care, Parvo...
-                </p>
-                <a href="blog-detail.html" class="service-link"
-                  >Đọc bài viết →</a
+                <svg
+                  class="img-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  ></path>
+                </svg>
+                <span class="img-caption" style="color: #ffffff"
+                  >Bác sĩ giỏi chuyên môn và nhiệt tình chăm sóc chó mèo</span
+                >
+                <span class="img-sub" style="color: #888888"
+                  >Homepage-Dr-An.webp (1200x801)</span
                 >
               </div>
             </div>
-
-            <div class="blog-card">
-              <div class="img-placeholder ratio-16-9">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Siêu âm chó mèo khi nào cần thiết</span
-                >
-              </div>
-              <div class="blog-card-body">
-                <div class="blog-date">📅 15/06/2026 • BS. Lê Minh Hùng</div>
-                <h3 class="blog-title">
-                  <a href="blog-detail.html"
-                    >Siêu Âm Chó Mèo: 7 Dấu Hiệu Cảnh Báo Không Nên Bỏ Qua</a
-                  >
-                </h3>
-                <p class="blog-excerpt">
-                  Bụng phình to bất thường, tiểu rắt, nôn mửa kéo dài... là
-                  những dấu hiệu cảnh báo cần đưa thú cưng đi siêu âm...
-                </p>
-                <a href="blog-detail.html" class="service-link"
-                  >Đọc bài viết →</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center" style="margin-top: 35px">
-            <a href="blog.html" class="btn btn-outline btn-rounded"
-              >Xem thêm tất cả bài viết</a
-            >
           </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="container footer-grid">
-          <div>
-            <div class="logo" style="margin-bottom: 14px">
-              <div class="logo-icon">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="logo-text">PetCare<span>Thú Y & Pet Care</span></div>
-            </div>
-            <p
-              style="
-                font-size: 0.9rem;
-                color: var(--text-muted);
-                margin-bottom: 16px;
-              "
-            >
-              Phòng khám Thú Y PetCare Thủ Dầu Một cung cấp đầy đủ dịch vụ khám
-              chữa bệnh, siêu âm, xét nghiệm máu, phẫu thuật và chăm sóc toàn
-              diện cho chó mèo.
-            </p>
-            <div
-              class="img-placeholder ratio-2-1"
-              style="max-width: 240px; padding: 10px"
-            >
-              <span class="img-badge">IMG</span>
-              <span class="img-caption" style="font-size: 0.75rem"
-                >Logo PetCare 1080x200</span
-              >
-            </div>
+    <footer id="footer" class="footer">
+      <!-- Big Logo Centered Section -->
+      <div class="container footer-logo-section">
+        <a
+          href="index.html"
+          class="logo"
+          style="justify-content: center; font-size: 2rem"
+        >
+          <div class="logo-badge">🐾 PetCare</div>
+          <div class="logo-text" style="font-size: 1.8rem">
+            PetCare<span>Thú Y & Pet Care</span>
           </div>
+        </a>
+      </div>
 
-          <div>
-            <h4 class="footer-col-title">Về Phòng Khám</h4>
-            <div class="footer-links">
-              <a href="about-us.html">Giới thiệu PetCare</a>
-              <a href="why-choose-us.html">Tại sao chọn PetCare</a>
-              <a href="gallery.html">Hình ảnh hoạt động</a>
-              <a href="blog.html">Cẩm nang nuôi thú cưng</a>
-              <a href="contact.html">Liên hệ & Góp ý</a>
-            </div>
+      <!-- 3 Footer Columns -->
+      <div class="container footer-grid">
+        <!-- Col 1: Về phòng khám -->
+        <div>
+          <h4 class="footer-col-title">Về phòng khám</h4>
+          <div class="footer-links">
+            <a href="about-us.html">Giới thiệu</a>
+            <a href="why-choose-us.html">Chọn PetCare</a>
+            <a href="gallery.html">Hình ảnh hoạt động</a>
+            <a href="contact.html">Liên hệ</a>
           </div>
+        </div>
 
-          <div>
-            <h4 class="footer-col-title">Dịch Vụ Nổi Bật</h4>
-            <div class="footer-links">
-              <a href="service-consultation-treatment.html"
-                >Tư vấn & Điều trị</a
-              >
-              <a href="service-blood-test.html">Xét nghiệm máu</a>
-              <a href="service-blood-parasites.html">Ký sinh trùng máu</a>
-              <a href="service-ultrasound.html">Siêu âm Doppler</a>
-              <a href="service-antibiogram.html">Kháng sinh đồ</a>
-              <a href="service-surgery.html">Phẫu thuật thú y</a>
-              <a href="service-vaccination.html">Tiêm ngừa Vaccine</a>
-              <a href="pet-shop.html">Pet Shop & Spa</a>
-            </div>
+        <!-- Col 2: Dịch vụ -->
+        <div>
+          <h4 class="footer-col-title">Dịch vụ</h4>
+          <div class="footer-links">
+            <a href="service-consultation-treatment.html">Tư vấn & Điều trị</a>
+            <a href="service-blood-test.html">Xét nghiệm</a>
+            <a href="service-blood-parasites.html">Ký sinh trùng máu</a>
+            <a href="service-antibiogram.html">Kháng sinh đồ</a>
+            <a href="service-ultrasound.html">Siêu âm</a>
+            <a href="service-surgery.html">Phẫu thuật</a>
+            <a href="service-vaccination.html">Tiêm ngừa</a>
+            <a href="pet-shop.html">Pet Shop</a>
           </div>
+        </div>
 
-          <div>
-            <h4 class="footer-col-title">Bản Đồ Chỉ Đường</h4>
-            <div class="footer-info-list" style="margin-bottom: 14px">
-              <div class="footer-info-item">
-                <svg fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  ></path>
-                </svg>
-                <span
-                  >386 CMT8, P. Phú Cường, TP. Thủ Dầu Một, Tỉnh Bình
-                  Dương</span
-                >
-              </div>
-              <div class="footer-info-item">
-                <svg fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                  ></path>
-                </svg>
-                <span><strong>Hotline:</strong> 0918 708 179</span>
-              </div>
-            </div>
-            <div
-              style="
-                border-radius: var(--radius-md);
-                overflow: hidden;
-                border: 1px solid var(--border-color);
-                height: 140px;
-              "
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.5380168581983!2d106.650816400477!3d10.984628244955822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d12157aca145%3A0x9aef85d917d03fd0!2zUGjDsm5nIEtow6FtIFRow7ogWSBBVCBQZXQgQ2FyZQ!5e0!3m2!1sen!2s!4v1685188458389!5m2!1sen!2s"
-                width="100%"
-                height="100%"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                title="Bản đồ PetCare"
-              ></iframe>
-            </div>
+        <!-- Col 3: Google Maps -->
+        <div>
+          <h4 class="footer-col-title">Google Maps</h4>
+          <div class="footer-map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.5380168581983!2d106.650816400477!3d10.984628244955822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d12157aca145%3A0x9aef85d917d03fd0!2zUGjDsm5nIEtow6FtIFRow7ogWSBBVCBQZXQgQ2FyZQ!5e0!3m2!1sen!2s!4v1685188458389!5m2!1sen!2s"
+              width="100%"
+              height="240"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              title="Bản đồ Google Maps PetCare Thủ Dầu Một"
+            ></iframe>
           </div>
         </div>
       </div>
 
-      <!-- Sub Footer -->
-      <div class="sub-footer">
-        <div class="container sub-footer-inner">
-          <div>
-            Phòng khám Thú Y PetCare © 2026. Tất cả các quyền được bảo lưu.
-            <br />
-            Giờ làm việc: 8:00 - 20:00 (Tất cả các ngày trong tuần)
+      <!-- Absolute Footer (Bottom Green Bar) -->
+      <div class="absolute-footer">
+        <div class="container absolute-footer-inner">
+          <div class="absolute-footer-text">
+            <strong>Phòng khám Thú Y PetCare © 2026</strong><br />
+            386 CMT8, P. Phú Cường, TP. Thủ Dầu Một, Bình Dương<br />
+            Giờ làm việc: 8h - 20h từ Thứ 2 - Chủ Nhật
           </div>
-          <div class="sub-footer-socials">
-            <a href="#" title="Facebook">FB</a>
-            <a href="#" title="TikTok">TT</a>
-            <a href="#" title="Zalo">ZL</a>
-            <a href="#" title="Instagram">IG</a>
+          <div class="absolute-footer-socials">
+            <a href="#" class="social-icon-btn" title="Facebook">FB</a>
+            <a href="#" class="social-icon-btn" title="TikTok">TT</a>
+            <a href="#" class="social-icon-btn" title="Zalo">ZL</a>
+            <a href="tel:0918708179" class="social-icon-btn" title="Hotline"
+              >📞</a
+            >
+            <a
+              href="mailto:contact@petcare.vn"
+              class="social-icon-btn"
+              title="Email"
+              >✉️</a
+            >
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- FLOATING SPEED DIAL -->
-    <div class="floating-contact-wrap">
-      <button class="scroll-top-btn" title="Lên đầu trang">
-        <svg
-          style="width: 20px; height: 20px"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 10l7-7m0 0l7 7m-7-7v18"
-          ></path>
-        </svg>
-      </button>
-
-      <div class="speed-dial-menu">
+    <!-- FLOATING ACTION DIAL (VKA Action Radial Wheel) -->
+    <div class="vka-wrapper" id="vkaWrapper">
+      <div class="vka-wheel">
         <a
           href="https://maps.app.goo.gl/4oZKq91Q1LPxfotM6"
           target="_blank"
-          class="speed-dial-btn"
-          rel="noreferrer"
+          class="vka-action-item"
+          title="Google Maps"
         >
-          <span>Chỉ đường Google Maps</span>
-          <div class="speed-dial-icon maps">📍</div>
+          <span>Xem chỉ đường Google Maps</span>
+          <div class="vka-item-icon icon-maps">📍</div>
         </a>
-        <a href="tel:0918708179" class="speed-dial-btn">
-          <span>Hotline: 0918 708 179</span>
-          <div class="speed-dial-icon phone">📞</div>
+        <a href="tel:0918708179" class="vka-action-item" title="Gọi Hotline">
+          <span>Gọi ngay 0918 708 179</span>
+          <div class="vka-item-icon icon-phone">📞</div>
         </a>
-        <a href="#" class="speed-dial-btn">
-          <span>Chat Zalo hỗ trợ</span>
-          <div class="speed-dial-icon zalo">Zalo</div>
+        <a
+          href="#"
+          target="_blank"
+          class="vka-action-item"
+          title="Facebook Messenger"
+        >
+          <span>Nhắn tin Facebook</span>
+          <div class="vka-item-icon icon-facebook">💬</div>
+        </a>
+        <a href="#" target="_blank" class="vka-action-item" title="Zalo">
+          <span>Nhắn tin Zalo</span>
+          <div class="vka-item-icon icon-zalo">ZL</div>
         </a>
       </div>
 
-      <button class="main-dial-btn" title="Liên hệ nhanh">
+      <button class="vka-main-btn" id="vkaMainBtn" title="Liên hệ ngay">
         <svg
           style="width: 28px; height: 28px"
           fill="none"
@@ -1410,132 +912,44 @@
       </button>
     </div>
 
-    <!-- SEARCH MODAL -->
+    <!-- SCROLL TOP BUTTON -->
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Lên đầu trang">
+      <svg
+        style="width: 20px; height: 20px"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- LIVE SEARCH MODAL -->
     <div class="modal-backdrop" id="searchModal">
       <div class="modal-content">
-        <button class="modal-close">&times;</button>
-        <h3 style="margin-bottom: 16px">🔍 Tìm kiếm tại PetCare</h3>
+        <button class="modal-close" id="closeSearchModalBtn">&times;</button>
+        <h3 style="margin-bottom: 16px">🔍 Tìm kiếm thông tin</h3>
         <input
           type="text"
-          id="globalSearchInput"
+          id="liveSearchInput"
           class="form-control"
-          placeholder="Nhập tên dịch vụ, triệu chứng, bệnh lý, sản phẩm..."
-          style="font-size: 1.05rem; padding: 14px"
+          placeholder="Nhập tên dịch vụ, bác sĩ, bảng giá, cẩm nang..."
+          autofocus
         />
         <div
-          id="searchResults"
-          style="margin-top: 20px; max-height: 350px; overflow-y: auto"
-        >
-          <p class="text-muted text-center py-4">
-            Nhập từ khóa để tìm kiếm thông tin nhanh...
-          </p>
-        </div>
+          id="liveSearchResults"
+          style="margin-top: 16px; max-height: 300px; overflow-y: auto"
+        ></div>
       </div>
     </div>
 
-    <!-- BOOKING TICKET MODAL -->
-    <div class="modal-backdrop" id="bookingTicketModal">
-      <div class="modal-content" style="text-align: center">
-        <button class="modal-close">&times;</button>
-        <div style="font-size: 3rem; margin-bottom: 10px">🎉</div>
-        <h3 style="color: var(--primary); margin-bottom: 6px">
-          Đặt Lịch Khám Thành Công!
-        </h3>
-        <p
-          style="
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-          "
-        >
-          Vui lòng lưu lại mã phiếu hẹn khi đến phòng khám
-        </p>
-
-        <div
-          style="
-            background: #f8fafc;
-            border: 2px dashed var(--primary);
-            border-radius: var(--radius-md);
-            padding: 20px;
-            text-align: left;
-            margin-bottom: 24px;
-          "
-        >
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              border-bottom: 1px solid #e2e8f0;
-              padding-bottom: 8px;
-              margin-bottom: 8px;
-            "
-          >
-            <span style="color: var(--text-muted)">Mã phiếu khám:</span>
-            <strong
-              id="ticketCode"
-              style="color: var(--primary); font-size: 1.1rem"
-              >PC-123456</strong
-            >
-          </div>
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              border-bottom: 1px solid #e2e8f0;
-              padding-bottom: 8px;
-              margin-bottom: 8px;
-            "
-          >
-            <span style="color: var(--text-muted)">Bé thú cưng:</span>
-            <strong id="ticketPetInfo">Milo (Chó)</strong>
-          </div>
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              border-bottom: 1px solid #e2e8f0;
-              padding-bottom: 8px;
-              margin-bottom: 8px;
-            "
-          >
-            <span style="color: var(--text-muted)">Dịch vụ:</span>
-            <span id="ticketService" style="font-weight: 600"
-              >Khám tổng quát</span
-            >
-          </div>
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              border-bottom: 1px solid #e2e8f0;
-              padding-bottom: 8px;
-              margin-bottom: 8px;
-            "
-          >
-            <span style="color: var(--text-muted)">Thời gian hẹn:</span>
-            <span id="ticketDateTime" style="font-weight: 600; color: #e11d48"
-              >09:00 - 2026-08-20</span
-            >
-          </div>
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              padding-top: 4px;
-            "
-          >
-            <span style="color: var(--text-muted)">Chủ nuôi:</span>
-            <span id="ticketOwner" style="font-weight: 600">Nguyễn Văn A</span>
-          </div>
-        </div>
-
-        <button
-          class="btn btn-primary btn-modal-close"
-          style="width: 100%; border-radius: var(--radius-md)"
-        >
-          Đã hiểu & Đóng
-        </button>
-      </div>
-    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/global.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
