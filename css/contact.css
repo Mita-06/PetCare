@@ -1,0 +1,83 @@
+/* ==========================================================================
+   PetCare - Contact Page Styling (Flatsome Theme Exact 100% Match)
+   ========================================================================== */
+
+.contact-top-section {
+  padding: 100px 0 80px;
+  background: #ffffff;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info-block {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.contact-info-block h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.contact-info-block p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Feedback Form Section (Góp ý) */
+.contact-feedback-section {
+  padding: 140px 0;
+  background-color: rgba(0, 127, 45, 0.1);
+  position: relative;
+}
+
+.feedback-form-box {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.feedback-form-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feedback-form-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.cf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .cf-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cf-full {
+  grid-column: 1 / -1;
+}
