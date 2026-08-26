@@ -28,7 +28,7 @@
 
           <nav class="header-nav">
             <div class="nav-item">
-              <a href="../../pages/about-us.html" class="nav-link">
+              <a href="../about/about-us.html" class="nav-link">
                 Giới Thiệu
                 <svg
                   style="width: 14px; height: 14px"
@@ -46,12 +46,12 @@
               </a>
               <ul class="nav-dropdown">
                 <li>
-                  <a href="../../pages/about-us.html" class="dropdown-link"
+                  <a href="../about/about-us.html" class="dropdown-link"
                     >Về Chúng Tôi</a
                   >
                 </li>
                 <li>
-                  <a href="../../pages/why-choose-us.html" class="dropdown-link"
+                  <a href="../about/why-choose-us.html" class="dropdown-link"
                     >Tại sao chọn PetCare</a
                   >
                 </li>
@@ -209,10 +209,10 @@
       </div>
       <div class="mobile-nav-list">
         <a href="../../index.html" class="mobile-nav-link">Trang Chủ</a>
-        <a href="../about-us/about-us.html" class="mobile-nav-link"
+        <a href="../about/about-us.html" class="mobile-nav-link"
           >Về Chúng Tôi</a
         >
-        <a href="../why-choose-us/why-choose-us.html" class="mobile-nav-link"
+        <a href="../about/why-choose-us.html" class="mobile-nav-link"
           >Tại Sao Chọn PetCare</a
         >
         <a href="./services.html" class="mobile-nav-link active"
@@ -226,284 +226,402 @@
     </div>
 
     <main id="main">
-      <!-- SECTION 1: TOP INTRO -->
-      <section class="section services-top-section">
+      <!-- SECTION 1: TOP INTRO (why-atpetcare-top) -->
+      <section class="section services-hero-section">
         <div class="container">
-          <div class="services-hero-grid">
+          <div class="services-top-row">
+            <!-- Left Col: Square Cover Image -->
             <div>
-              <div class="img-placeholder ratio-1-1">
+              <div
+                class="img-placeholder ratio-1-1"
+                style="border-radius: 20px"
+              >
                 <div class="img-badge">IMG</div>
+                <svg
+                  class="img-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                  ></path>
+                </svg>
                 <span class="img-caption"
-                  >Bác sĩ thú y thực hiện kháng sinh đồ tại phòng khám</span
+                  >Bác sĩ thú y thực hiện kháng sinh đồ tại phòng khám
+                  PetCare</span
                 >
                 <span class="img-sub">Dich-Vu-Top.webp (1200x800)</span>
               </div>
             </div>
 
-            <div>
+            <!-- Right Col: Headline & Pitch -->
+            <div class="services-top-text">
               <h1>Đầy đủ dịch vụ tại PetCare</h1>
-              <p style="font-size: 1.05rem; color: #555; margin-bottom: 16px">
+              <p>
                 Bạn vẫn còn băn khoăn trong việc tìm một địa chỉ uy tín cho thú
-                cưng của mình?
+                cưng của mình ?
               </p>
-              <p style="font-size: 1.05rem; color: #555; margin-bottom: 16px">
+              <p>
                 Bạn muốn được tư vấn bởi một bác sĩ thú y tận tâm, làm việc
                 không mệt mỏi chỉ để đảm bảo sức khoẻ cho thú cưng của bạn một
-                cách tốt nhất?
+                cách tốt nhất ?
               </p>
-              <p style="font-size: 1.05rem; color: #555; margin-bottom: 24px">
+              <p>
                 PetCare là phòng khám thú y tập trung về chất lượng điều trị và
                 chăm sóc đặc biệt cho thú cưng. Chúng tôi cam kết đảm bảo an
                 toàn đi cùng chất lượng dịch vụ cao nhất để khách hàng luôn cảm
                 thấy hài lòng khi đến với PetCare.
               </p>
-              <a
-                href="tel:0918708179"
-                class="button primary"
-                style="border-radius: 10px"
-              >
-                <span>Đặt lịch ngay</span>
+              <a href="tel:0918708179" class="button primary">
+                <span>Đặt lịch</span>
+                <svg
+                  style="width: 16px; height: 16px"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 2: 8 GREEN SERVICE CARDS ("Boss" của bạn cần gì ?) -->
-      <section class="section tat-ca-dich-vu-section">
+      <!-- SECTION 2: TẤT CẢ DỊCH VỤ ("Boss" của bạn cần gì ?) -->
+      <section class="section tat-ca-dich-vu">
         <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">"Boss" của bạn cần gì ?</h2>
+          <div class="services-heading">
+            <h2>
+              <span style="font-size: 150%">"Boss" của bạn cần gì ?</span>
+            </h2>
+            <!-- Cute Dog Love Lottie Animation Box -->
+            <div class="lottie-animation-box">
+              <span class="lottie-badge">ANIMATION LOTTIE</span>
+              <div class="lottie-title">🐾 Chăm sóc & Yêu thương thú cưng</div>
+              <div class="lottie-sub">
+                91540-dog-love.json (Tương tác hoạt họa Lottie)
+              </div>
+            </div>
           </div>
 
-          <div class="services-grid-cards">
-            <!-- Service 1 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
+          <!-- The 8 Green Service Cards Grid (Flatsome .the-dich-vu) -->
+          <div class="the-dich-vu-grid">
+            <!-- 1. Tư vấn & Điều trị -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
                 <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Khám bệnh chó mèo</span
+                <span class="img-caption"
+                  >Khám bệnh chó mèo Thủ Dầu Một tại PetCare</span
                 >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Tu-Van.webp</span
+                <span class="img-sub"
+                  >Tat-Ca-Dich-Vu-Tu-Van.webp (800x534)</span
                 >
               </div>
-              <div class="service-green-card-body">
+              <div class="the-dich-vu-body">
                 <h3>Tư vấn & Điều trị</h3>
                 <p>
                   Với kinh nghiệm của bác sĩ trình độ chuyên môn cao, nhiều năm
                   kinh nghiệm làm việc tại Sài Gòn.
                 </p>
                 <a
-                  href="service-consultation-treatment.html"
+                  href="./consultation-treatment.html"
                   class="button white is-underline"
-                  >Chi tiết →</a
                 >
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
 
-            <!-- Service 2 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
+            <!-- 2. Tiêm ngừa -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
                 <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Xét nghiệm máu cho chó mèo</span
+                <span class="img-caption"
+                  >Khám bệnh chó mèo tại phòng khám thú y Thủ Dầu Một
+                  PetCare</span
                 >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Xet-Nghiem.webp</span
+                <span class="img-sub"
+                  >Tat-Ca-Dich-Vu-Tiem-Ngua.webp (800x534)</span
                 >
               </div>
-              <div class="service-green-card-body">
+              <div class="the-dich-vu-body">
+                <h3>Tiêm ngừa</h3>
+                <p>
+                  Tiêm ngừa vắc xin là biện pháp phòng bệnh truyền nhiễm đơn
+                  giản và hiệu quả nhất hiện nay.
+                </p>
+                <a href="./vaccination.html" class="button white is-underline">
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- 3. Xét nghiệm máu -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
+                <div class="img-badge">IMG</div>
+                <span class="img-caption"
+                  >Xét nghiệm máu chó mèo Thủ Dầu Một tại PetCare</span
+                >
+                <span class="img-sub"
+                  >Tat-Ca-Dich-Vu-Xet-Nghiem.webp (800x534)</span
+                >
+              </div>
+              <div class="the-dich-vu-body">
                 <h3>Xét nghiệm máu</h3>
                 <p>
                   Xét nghiệm máu thú y giúp phát hiện và ngăn ngừa các bệnh nguy
                   hiểm tiềm tàng.
                 </p>
-                <a
-                  href="service-blood-test.html"
-                  class="button white is-underline"
-                  >Chi tiết →</a
-                >
+                <a href="./blood-test.html" class="button white is-underline">
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
 
-            <!-- Service 3 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
+            <!-- 4. Xét nghiệm Ký sinh trùng máu -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
                 <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Xét nghiệm ký sinh trùng máu</span
+                <span class="img-caption"
+                  >Xét nghiệm ký sinh trùng máu Thủ Dầu Một tại PetCare</span
                 >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Ky-Sinh-Trung-Mau.webp</span
+                <span class="img-sub"
+                  >Tat-Ca-Dich-Vu-Ky-Sinh-Trung-Mau.webp (1360x907)</span
                 >
               </div>
-              <div class="service-green-card-body">
-                <h3>Xét nghiệm ký sinh trùng máu</h3>
+              <div class="the-dich-vu-body">
+                <h3>Xét nghiệm Ký sinh trùng máu</h3>
                 <p>
-                  Phát hiện kịp thời ve, bọ chét và ký sinh trùng lây truyền qua
-                  đường máu ở chó mèo.
+                  Là một phương pháp để chẩn đoán và xác định sự hiện diện của
+                  các loại ký sinh trùng gây bệnh trong máu của động vật.
                 </p>
                 <a
-                  href="service-blood-parasites.html"
+                  href="./blood-parasites.html"
                   class="button white is-underline"
-                  >Chi tiết →</a
                 >
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
 
-            <!-- Service 4 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
+            <!-- 5. Siêu âm -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
                 <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Siêu âm chó mèo</span
+                <span class="img-caption"
+                  >Bác sĩ thú y siêu âm chó mèo tại phòng khám PetCare Thủ Dầu
+                  Một</span
                 >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Sieu-Am.webp</span
+                <span class="img-sub"
+                  >Tat-Ca-Dich-Vu-Sieu-Am.webp (800x534)</span
                 >
               </div>
-              <div class="service-green-card-body">
+              <div class="the-dich-vu-body">
                 <h3>Siêu âm</h3>
                 <p>
-                  Gồm có siêu âm thai và siêu âm giúp phát hiện các bệnh lý ở ổ
-                  bụng và mô mềm.
+                  Gồm có siêu âm thai và siêu âm giúp phát hiện các bệnh ở mô
+                  mềm.
                 </p>
-                <a
-                  href="service-ultrasound.html"
-                  class="button white is-underline"
-                  >Chi tiết →</a
-                >
+                <a href="./ultrasound.html" class="button white is-underline">
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
 
-            <!-- Service 5 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
+            <!-- 6. Kháng sinh đồ -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
                 <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Kháng sinh đồ thú y</span
+                <span class="img-caption"
+                  >Điều trị nhiễm khuẩn chó mèo bằng kháng sinh đồ tại PetCare
+                  Thủ Dầu Một</span
                 >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Khang-Sinh-Do.webp</span
+                <span class="img-sub"
+                  >Tat-Ca-Dich-Vu-Khang-Sinh-Do.webp (800x534)</span
                 >
               </div>
-              <div class="service-green-card-body">
+              <div class="the-dich-vu-body">
                 <h3>Kháng sinh đồ</h3>
                 <p>
-                  Xét nghiệm nuôi cấy vi khuẩn giúp lựa chọn chính xác loại
-                  thuốc đặc trị, tránh lờn thuốc.
+                  Kháng sinh đồ là các loại thuốc được dùng để điều trị nhiễm
+                  trùng do vi khuẩn gây ra trong cơ thể động vật.
                 </p>
-                <a
-                  href="service-antibiogram.html"
-                  class="button white is-underline"
-                  >Chi tiết →</a
-                >
+                <a href="./antibiogram.html" class="button white is-underline">
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
 
-            <!-- Service 6 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
+            <!-- 7. Phẫu thuật -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
                 <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Phẫu thuật triệt sản chó mèo</span
+                <span class="img-caption"
+                  >Phẫu thuật chó mèo tại phòng khám thú y Thủ Dầu Một
+                  PetCare</span
                 >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Phau-Thuat.webp</span
+                <span class="img-sub"
+                  >Dich-vu-phau-thuat-e1688008486817.webp (800x534)</span
                 >
               </div>
-              <div class="service-green-card-body">
+              <div class="the-dich-vu-body">
                 <h3>Phẫu thuật</h3>
-                <p>
-                  Đem lại những điều an toàn nhất cho thú cưng của bạn với phòng
-                  mổ áp lực dương vô trùng.
-                </p>
-                <a href="service-surgery.html" class="button white is-underline"
-                  >Chi tiết →</a
-                >
+                <p>Đem lại những điều an toàn nhất cho thú cưng của bạn.</p>
+                <a href="./surgery.html" class="button white is-underline">
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
 
-            <!-- Service 7 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
+            <!-- 8. Pet Shop -->
+            <div class="the-dich-vu-card">
+              <div class="img-placeholder">
                 <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Tiêm ngừa vắc xin chính hãng</span
+                <span class="img-caption"
+                  >Pet shop thú cưng tại Thủ Dầu Một — PetCare</span
                 >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Tiem-Ngua.webp</span
-                >
-              </div>
-              <div class="service-green-card-body">
-                <h3>Tiêm ngừa</h3>
-                <p>
-                  Tiêm chủng vắc xin là biện pháp phòng bệnh truyền nhiễm đơn
-                  giản và hiệu quả nhất hiện nay.
-                </p>
-                <a
-                  href="service-vaccination.html"
-                  class="button white is-underline"
-                  >Chi tiết →</a
+                <span class="img-sub"
+                  >Tat-Ca-Dich-Vu-Pet-Shop.webp (800x534)</span
                 >
               </div>
-            </div>
-
-            <!-- Service 8 -->
-            <div class="service-green-card">
-              <div
-                class="img-placeholder ratio-16-9"
-                style="border-radius: 0; border: none; background: #006824"
-              >
-                <div class="img-badge">IMG</div>
-                <span class="img-caption" style="color: #fff"
-                  >Pet Shop thức ăn & phụ kiện</span
-                >
-                <span class="img-sub" style="color: #bbf7d0"
-                  >Tat-Ca-Dich-Vu-Pet-Shop.webp</span
-                >
-              </div>
-              <div class="service-green-card-body">
+              <div class="the-dich-vu-body">
                 <h3>Pet Shop</h3>
                 <p>
-                  Cung cấp thức ăn hạt, pate dinh dưỡng, cát vệ sinh và các sản
-                  phẩm chăm sóc toàn diện.
+                  Chúng tôi cung cấp những mặt hàng thiết yếu nhất cho thú cưng
+                  của bạn.
                 </p>
-                <a href="pet-shop.html" class="button white is-underline"
-                  >Chi tiết →</a
+                <a
+                  href="../shop/pet-shop.html"
+                  class="button white is-underline"
                 >
+                  <span>Chi tiết</span>
+                  <svg
+                    style="width: 14px; height: 14px"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 3: BLACKBOX -->
+      <!-- SECTION 3: BLACKBOX (Không chỉ là phòng khám - Chúng tôi ở đây để giúp bạn) -->
       <section class="section homepage-blackbox">
         <div class="container">
           <div class="blackbox-grid">
+            <!-- Left Column -->
             <div>
               <span class="blackbox-tag">Không chỉ là phòng khám</span>
               <h2 class="blackbox-title">Chúng tôi ở đây để giúp bạn</h2>
@@ -533,12 +651,30 @@
               </div>
             </div>
 
+            <!-- Right Column -->
             <div>
               <div
                 class="img-placeholder ratio-1-1"
-                style="background: #111111; border-color: #333333"
+                style="
+                  background: #111111;
+                  border-color: #333333;
+                  border-radius: 20px;
+                "
               >
                 <div class="img-badge">IMG</div>
+                <svg
+                  class="img-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  ></path>
+                </svg>
                 <span class="img-caption" style="color: #ffffff"
                   >Bác sĩ giỏi chuyên môn và nhiệt tình chăm sóc chó mèo</span
                 >
@@ -556,7 +692,7 @@
     <footer id="footer" class="footer">
       <div class="container footer-logo-section">
         <a
-          href="index.html"
+          href="../../index.html"
           class="logo"
           style="justify-content: center; font-size: 2rem"
         >
@@ -568,30 +704,33 @@
       </div>
 
       <div class="container footer-grid">
+        <!-- Col 1: Về phòng khám -->
         <div>
           <h4 class="footer-col-title">Về phòng khám</h4>
           <div class="footer-links">
-            <a href="about-us.html">Giới thiệu</a>
-            <a href="why-choose-us.html">Chọn PetCare</a>
-            <a href="gallery.html">Hình ảnh hoạt động</a>
-            <a href="contact.html">Liên hệ</a>
+            <a href="../about/about-us.html">Giới thiệu</a>
+            <a href="../about/why-choose-us.html">Chọn PetCare</a>
+            <a href="../gallery/gallery.html">Hình ảnh hoạt động</a>
+            <a href="../contact/contact.html">Liên hệ</a>
           </div>
         </div>
 
+        <!-- Col 2: Dịch vụ -->
         <div>
           <h4 class="footer-col-title">Dịch vụ</h4>
           <div class="footer-links">
-            <a href="service-consultation-treatment.html">Tư vấn & Điều trị</a>
-            <a href="service-blood-test.html">Xét nghiệm</a>
-            <a href="service-blood-parasites.html">Ký sinh trùng máu</a>
-            <a href="service-antibiogram.html">Kháng sinh đồ</a>
-            <a href="service-ultrasound.html">Siêu âm</a>
-            <a href="service-surgery.html">Phẫu thuật</a>
-            <a href="service-vaccination.html">Tiêm ngừa</a>
-            <a href="pet-shop.html">Pet Shop</a>
+            <a href="./consultation-treatment.html">Tư vấn & Điều trị</a>
+            <a href="./vaccination.html">Tiêm ngừa</a>
+            <a href="./blood-test.html">Xét nghiệm</a>
+            <a href="./blood-parasites.html">Ký sinh trùng máu</a>
+            <a href="./ultrasound.html">Siêu âm</a>
+            <a href="./antibiogram.html">Kháng sinh đồ</a>
+            <a href="./surgery.html">Phẫu thuật</a>
+            <a href="../shop/pet-shop.html">Pet Shop</a>
           </div>
         </div>
 
+        <!-- Col 3: Google Maps -->
         <div>
           <h4 class="footer-col-title">Google Maps</h4>
           <div class="footer-map-wrap">
@@ -602,12 +741,13 @@
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
-              title="Bản đồ Google Maps PetCare"
+              title="Bản đồ Google Maps PetCare Thủ Dầu Một"
             ></iframe>
           </div>
         </div>
       </div>
 
+      <!-- Absolute Footer (Bottom Green Bar) -->
       <div class="absolute-footer">
         <div class="container absolute-footer-inner">
           <div class="absolute-footer-text">
@@ -633,7 +773,7 @@
       </div>
     </footer>
 
-    <!-- FLOATING ACTION DIAL -->
+    <!-- FLOATING ACTION DIAL (VKA Action Radial Wheel) -->
     <div class="vka-wrapper" id="vkaWrapper">
       <div class="vka-wheel">
         <a
@@ -681,6 +821,7 @@
       </button>
     </div>
 
+    <!-- SCROLL TOP BUTTON -->
     <button class="scroll-top-btn" id="scrollTopBtn" title="Lên đầu trang">
       <svg
         style="width: 20px; height: 20px"
@@ -696,6 +837,25 @@
         ></path>
       </svg>
     </button>
+
+    <!-- LIVE SEARCH MODAL -->
+    <div class="modal-backdrop" id="searchModal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeSearchModalBtn">&times;</button>
+        <h3 style="margin-bottom: 16px">🔍 Tìm kiếm thông tin</h3>
+        <input
+          type="text"
+          id="liveSearchInput"
+          class="form-control"
+          placeholder="Nhập tên dịch vụ, bác sĩ, bảng giá, cẩm nang..."
+          autofocus
+        />
+        <div
+          id="liveSearchResults"
+          style="margin-top: 16px; max-height: 300px; overflow-y: auto"
+        ></div>
+      </div>
+    </div>
 
     <script src="../../js/data.js"></script>
     <script src="../../js/global.js"></script>

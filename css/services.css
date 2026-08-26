@@ -1,13 +1,20 @@
 /* ==========================================================================
-   PetCare - Services Styling (Flatsome Theme Exact 100% Match)
+   PetCare - Services Styling (Flatsome Exact 100% Replica)
    ========================================================================== */
 
-.services-top-section {
-  padding: 100px 0 80px;
-  background: #ffffff;
+/* 1. Top Section (why-atpetcare-top) */
+.services-hero-section {
+  padding: 100px 0;
+  background-color: #ffffff;
 }
 
-.services-hero-grid {
+@media (min-width: 768px) {
+  .services-hero-section {
+    padding: 130px 0 100px;
+  }
+}
+
+.services-top-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
@@ -15,146 +22,281 @@
 }
 
 @media (max-width: 850px) {
-  .services-hero-grid {
+  .services-top-row {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 35px;
   }
 }
 
-/* Green Service Cards Grid (Flatsome .the-dich-vu style) */
-.tat-ca-dich-vu-section {
-  padding: 80px 0 100px;
-  background: #fdfdfd;
+.services-top-text h1 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.25;
 }
 
-.services-grid-cards {
+.services-top-text p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.services-top-text .button.primary {
+  margin-top: 10px;
+  padding: 12px 30px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.services-top-text .button.primary:hover {
+  background-color: #006824;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 127, 45, 0.3);
+}
+
+/* 2. All Services Section (tat-ca-dich-vu) */
+.tat-ca-dich-vu {
+  padding: 80px 0 100px;
+  background-color: #ffffff;
+}
+
+.services-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services-heading h2 {
+  font-size: clamp(2rem, 3.5vw, 2.7rem);
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Lottie Animation placeholder container */
+.lottie-animation-box {
+  width: 100%;
+  max-width: 450px;
+  height: 220px;
+  margin: 0 auto 40px;
+  background: rgba(0, 127, 45, 0.04);
+  border-radius: 20px;
+  border: 2px dashed rgba(0, 127, 45, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.lottie-badge {
+  background: var(--primary-color);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.lottie-title {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.lottie-sub {
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+/* The 8 Green Service Cards Grid (Flatsome .the-dich-vu) */
+.the-dich-vu-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
-  .services-grid-cards {
+  .the-dich-vu-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
-.service-green-card {
+.the-dich-vu-card {
   background-color: var(--primary-color);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 127, 45, 0.2);
-  transition: var(--transition);
+  box-shadow: 0 8px 24px rgba(0, 127, 45, 0.18);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #ffffff;
 }
 
-.service-green-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 14px 32px rgba(0, 127, 45, 0.35);
+.the-dich-vu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 127, 45, 0.32);
 }
 
-.service-green-card-body {
-  padding: 28px 24px;
+.the-dich-vu-card .img-placeholder {
+  border-radius: 20px 20px 0 0;
+  border: none;
+  background-color: #006a26;
+  aspect-ratio: 800 / 534;
+}
+
+.the-dich-vu-card .img-placeholder .img-badge {
+  background: #ffffff;
+  color: var(--primary-color);
+}
+
+.the-dich-vu-card .img-placeholder .img-caption {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.the-dich-vu-card .img-placeholder .img-sub {
+  color: #a7f3d0;
+}
+
+.the-dich-vu-body {
+  padding: 28px 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
 }
 
-.service-green-card h3 {
+.the-dich-vu-body h3 {
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 700;
   margin-bottom: 12px;
+  line-height: 1.3;
 }
 
-.service-green-card p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.the-dich-vu-body p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin-bottom: 22px;
   max-width: 480px;
+  flex-grow: 1;
 }
 
-.service-green-card .button.white.is-underline {
-  font-size: 1rem;
+.the-dich-vu-body .button.white.is-underline {
+  font-size: 1.05rem;
   font-weight: 700;
   color: #ffffff;
   text-decoration: underline;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  transition: var(--transition);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  background: transparent;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
-.service-green-card .button.white.is-underline:hover {
+.the-dich-vu-body .button.white.is-underline:hover {
+  opacity: 0.85;
   transform: translateX(4px);
-  color: #d1fae5;
 }
 
-/* Service Detail View Layout */
-.service-detail-header {
-  padding: 80px 0 60px;
-  background: var(--bg-light);
+/* ==========================================================================
+   Service Detail Page Styles (Flatsome Exact Match)
+   ========================================================================== */
+
+.service-detail-hero {
+  padding: 100px 0;
+  background-color: #ffffff;
 }
 
-.service-detail-grid {
+@media (min-width: 768px) {
+  .service-detail-hero {
+    padding: 130px 0 100px;
+  }
+}
+
+.service-detail-hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: center;
 }
 
 @media (max-width: 850px) {
-  .service-detail-grid {
+  .service-detail-hero-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 35px;
   }
 }
 
-.service-detail-content {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 60px 0;
+.service-detail-hero-text h1 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.25;
 }
 
-.service-detail-content h2 {
-  font-size: 1.8rem;
-  margin: 30px 0 16px;
-}
-
-.service-detail-content p {
+.service-detail-hero-text p {
   font-size: 1.05rem;
-  line-height: 1.8;
-  color: #444444;
+  line-height: 1.75;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+/* Middle Deep-Dive Section (why-atpetcare-clinic with wave dividers) */
+.service-deep-dive-section {
+  padding: 140px 0;
+  background-color: rgba(119, 119, 119, 0.1);
+  position: relative;
+}
+
+.service-deep-dive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .service-deep-dive-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.service-deep-dive-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #333333;
   margin-bottom: 18px;
 }
 
-.service-bullet-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin: 24px 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.service-bullet-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 1rem;
-  color: #333333;
-  line-height: 1.6;
-}
-
-.service-bullet-item::before {
-  content: "✓";
-  color: var(--primary-color);
-  font-weight: 800;
-  font-size: 1.1rem;
+.service-deep-dive-text p:last-child {
+  margin-bottom: 0;
 }
