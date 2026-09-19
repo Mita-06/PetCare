@@ -210,12 +210,9 @@
 }
 
 .why-review-quote {
-  background: #ffffff;
   border-radius: 16px;
   padding: 20px 24px;
   margin-top: 16px;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-color);
 }
 
 .why-review-quote p {
@@ -258,7 +255,7 @@
   background: #ffffff;
   padding: 24px;
   border-radius: 16px;
-  border: 1px solid var(--border-color);
+
   transition: var(--transition);
 }
 

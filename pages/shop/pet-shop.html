@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/global.css" />
     <link rel="stylesheet" href="../../css/shop.css" />
     <link rel="stylesheet" href="../../css/services.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -132,9 +133,6 @@
             <div class="nav-item">
               <a href="../contact/contact.html" class="nav-link">Liên Hệ</a>
             </div>
-          </nav>
-
-          <div class="header-actions">
             <button class="btn-search" title="Tìm kiếm" id="searchToggleBtn">
               <svg
                 style="width: 20px; height: 20px"
@@ -150,42 +148,7 @@
                 ></path>
               </svg>
             </button>
-            <a href="../shop/pet-shop.html" class="btn-cart" title="Giỏ hàng">
-              <svg
-                style="width: 20px; height: 20px"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="tel:0918708179"
-              class="button primary btn-sm hide-for-small"
-              >Hotline: 0918 708 179</a
-            >
-            <button class="mobile-toggle" id="mobileMenuBtn">
-              <svg
-                style="width: 26px; height: 26px"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -245,26 +208,11 @@
                 class="img-placeholder ratio-1-1"
                 style="border-radius: 20px"
               >
-                <div class="img-badge">IMG</div>
-                <svg
-                  class="img-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.8"
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                  ></path>
-                </svg>
-                <span class="img-caption"
-                  >Pet shop thú cưng tại Thủ Dầu Một — PetCare</span
-                >
-                <span class="img-sub"
-                  >Tat-Ca-Dich-Vu-Pet-Shop.webp (800x534)</span
-                >
+                <img
+                  src="../../assets/Tat-Ca-Dich-Vu-Pet-Shop (1).webp"
+                  alt="Pet Shop Thú Cưng PetCare"
+                  class="service-detail-hero-img"
+                />
               </div>
             </div>
 
@@ -301,101 +249,6 @@
       </section>
 
       <!-- SHOP PRODUCTS GRID -->
-      <section class="section shop-container">
-        <div class="container">
-          <h2 class="section-title">Sản phẩm nổi bật</h2>
-          <p class="section-desc">
-            Được các bác sĩ thú y PetCare tuyển chọn kỹ lưỡng về chất lượng và
-            độ an toàn.
-          </p>
-
-          <div class="shop-grid">
-            <div class="product-card">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Hạt Royal Canin Indoor 2kg</span>
-                <span class="img-sub">product-1.webp</span>
-              </div>
-              <div class="product-info">
-                <span class="product-category">Thức ăn cho mèo</span>
-                <h3 class="product-title">
-                  Hạt Royal Canin Indoor 2kg cho mèo nuôi trong nhà
-                </h3>
-                <div class="product-price">385.000 ₫</div>
-                <button
-                  class="button primary product-btn"
-                  onclick="alert('Đã thêm sản phẩm vào giỏ hàng!')"
-                >
-                  Thêm giỏ hàng
-                </button>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Pate King's Pet 380g</span>
-                <span class="img-sub">product-2.webp</span>
-              </div>
-              <div class="product-info">
-                <span class="product-category">Pate & Dinh dưỡng</span>
-                <h3 class="product-title">
-                  Pate cá hồi King's Pet bổ sung Omega 3 cho chó mèo
-                </h3>
-                <div class="product-price">45.000 ₫</div>
-                <button
-                  class="button primary product-btn"
-                  onclick="alert('Đã thêm sản phẩm vào giỏ hàng!')"
-                >
-                  Thêm giỏ hàng
-                </button>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Nexgard Spectra trị ve rận</span>
-                <span class="img-sub">product-3.webp</span>
-              </div>
-              <div class="product-info">
-                <span class="product-category">Dược phẩm thú y</span>
-                <h3 class="product-title">
-                  Viên nhai Nexgard Spectra ngừa ve rận & giun tim
-                </h3>
-                <div class="product-price">190.000 ₫</div>
-                <button
-                  class="button primary product-btn"
-                  onclick="alert('Đã thêm sản phẩm vào giỏ hàng!')"
-                >
-                  Thêm giỏ hàng
-                </button>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div class="img-placeholder ratio-1-1">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Cát đậu nành Tofu Cature</span>
-                <span class="img-sub">product-4.webp</span>
-              </div>
-              <div class="product-info">
-                <span class="product-category">Vệ sinh thú cưng</span>
-                <h3 class="product-title">
-                  Cát đậu nành Tofu Cature 6L khử mùi kháng khuẩn
-                </h3>
-                <div class="product-price">120.000 ₫</div>
-                <button
-                  class="button primary product-btn"
-                  onclick="alert('Đã thêm sản phẩm vào giỏ hàng!')"
-                >
-                  Thêm giỏ hàng
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- BLACKBOX SECTION -->
       <section class="section homepage-blackbox">
@@ -432,32 +285,13 @@
             <div>
               <div
                 class="img-placeholder ratio-1-1"
-                style="
-                  background: #111111;
-                  border-color: #333333;
-                  border-radius: 20px;
-                "
+                style="border-color: #333333; border-radius: 20px"
               >
-                <div class="img-badge">IMG</div>
-                <svg
-                  class="img-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.8"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  ></path>
-                </svg>
-                <span class="img-caption" style="color: #ffffff"
-                  >Bác sĩ giỏi chuyên môn và nhiệt tình chăm sóc chó mèo</span
-                >
-                <span class="img-sub" style="color: #888888"
-                  >Homepage-Dr-An.webp (1200x801)</span
-                >
+                <img
+                  src="../../assets/Homepage-Dr-An-1024x684 (1).webp"
+                  alt="Chúng tôi ở đây để giúp bạn"
+                  class="blackbox-img"
+                />
               </div>
             </div>
           </div>
