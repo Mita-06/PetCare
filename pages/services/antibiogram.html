@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -122,9 +126,7 @@
             <div class="nav-item">
               <a href="../gallery/gallery.html" class="nav-link">Hình Ảnh</a>
             </div>
-            <div class="nav-item">
-              <a href="../blog/blog.html" class="nav-link">Cẩm Nang</a>
-            </div>
+
             <div class="nav-item">
               <a href="../contact/contact.html" class="nav-link">Liên Hệ</a>
             </div>
@@ -186,7 +188,7 @@
         >
         <a href="../shop/pet-shop.html" class="mobile-nav-link">Pet Shop</a>
         <a href="../gallery/gallery.html" class="mobile-nav-link">Hình Ảnh</a>
-        <a href="../blog/blog.html" class="mobile-nav-link">Cẩm Nang</a>
+
         <a href="../contact/contact.html" class="mobile-nav-link">Liên Hệ</a>
       </div>
     </div>
@@ -325,12 +327,22 @@
             <h2>
               <span style="font-size: 150%">"Boss" của bạn cần gì ?</span>
             </h2>
-            <div class="lottie-animation-box">
-              <span class="lottie-badge">ANIMATION LOTTIE</span>
-              <div class="lottie-title">🐾 Chăm sóc & Yêu thương thú cưng</div>
-              <div class="lottie-sub">
-                91540-dog-love.json (Tương tác hoạt họa Lottie)
-              </div>
+            <div
+              class="hero-illustration"
+              style="
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-start;
+              "
+            >
+              <dotlottie-player
+                src="https://lottie.host/63cf4412-a2f4-4490-a63c-eb575da70312/X7LYSKGfnS.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 360px; height: 280px"
+                loop
+                autoplay
+              ></dotlottie-player>
             </div>
           </div>
 

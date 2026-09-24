@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <script
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"
@@ -138,9 +142,7 @@
                 >Hình Ảnh</a
               >
             </div>
-            <div class="nav-item">
-              <a href="./pages/blog/blog.html" class="nav-link">Cẩm Nang</a>
-            </div>
+
             <div class="nav-item">
               <a href="./pages/contact/contact.html" class="nav-link"
                 >Liên Hệ</a
@@ -249,7 +251,7 @@
                 "
               >
                 <dotlottie-player
-                  src="https://lottie.host/ad52d0ea-9b56-4259-873b-fb9106a03724/HYPhX45mPR.lottie"
+                  src="https://lottie.host/50362401-d473-4cea-aab4-4ab6921471a7/bzHSyO07xK.lottie"
                   background="transparent"
                   speed="1"
                   style="width: 360px; height: 280px; background: #ffffff"
@@ -260,13 +262,15 @@
             </div>
 
             <!-- Right Column -->
-            <div>
-              <div class="img-placeholder ratio-4-3">
-                <img
-                  src="./assets/Thu-Y-Thu-Dau-Mot-AT-Pet-Care.webp"
-                  alt="Chăm sóc chó mèo"
-                />
-              </div>
+
+            <div
+              class="img-placeholder ratio-4-3"
+              style="width: 100%; height: 100%"
+            >
+              <img
+                src="./assets/Thu-Y-Thu-Dau-Mot-AT-Pet-Care.webp"
+                alt="Chăm sóc chó mèo"
+              />
             </div>
           </div>
         </div>
@@ -317,108 +321,304 @@
           </div>
 
           <!-- 6 Real Review Cards -->
-          <div class="reviews-grid">
-            <!-- Card 1 -->
-            <div class="review-item-card">
-              <div class="review-card-header">
-                <div class="review-avatar">J</div>
-                <div class="review-user-info">
-                  <span class="review-user-name">Jet</span>
-                  <span class="review-verified">✓ Đã xác thực trên Google</span>
-                </div>
+          <!-- Splide Carousel Reviews -->
+          <div
+            class="splide reviews-splide"
+            id="reviewsSplide"
+            aria-label="Đánh giá từ khách hàng"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Card 1 -->
+                <li class="splide__slide">
+                  <div class="review-item-card">
+                    <div class="review-card-header">
+                      <div class="review-avatar">J</div>
+                      <div class="review-user-info">
+                        <span class="review-user-name">Jet</span>
+                        <span class="review-verified"
+                          >✓ Đã xác thực trên Google</span
+                        >
+                      </div>
+                    </div>
+                    <div class="google-stars">★★★★★</div>
+                    <p class="review-text">
+                      "Bác sĩ đội ngũ chuyên nghiệp và tận tâm. Yên tâm khi mang
+                      pet đến đây khám. Mèo mình bệnh rất nặng tưởng như không
+                      ổn nay đã gần như khỏi bệnh, đánh giá 5 sao!"
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Card 2 -->
+                <li class="splide__slide">
+                  <div class="review-item-card">
+                    <div class="review-card-header">
+                      <div class="review-avatar">Q</div>
+                      <div class="review-user-info">
+                        <span class="review-user-name">Quyen Vo</span>
+                        <span class="review-verified"
+                          >✓ Đã xác thực trên Google</span
+                        >
+                      </div>
+                    </div>
+                    <div class="google-stars">★★★★★</div>
+                    <p class="review-text">
+                      "Bác sĩ An chăm sóc bé tận tâm lắm luôn ạ, cảm ơn bác sĩ
+                      rất nhiều ạ 🍀 Phòng khám hiện đại và rất sạch sẽ."
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Card 3 -->
+                <li class="splide__slide">
+                  <div class="review-item-card">
+                    <div class="review-card-header">
+                      <div class="review-avatar">Ý</div>
+                      <div class="review-user-info">
+                        <span class="review-user-name">Ý Nguyễn</span>
+                        <span class="review-verified"
+                          >✓ Đã xác thực trên Google</span
+                        >
+                      </div>
+                    </div>
+                    <div class="google-stars">★★★★★</div>
+                    <p class="review-text">
+                      "Phòng khám PetCare rất sạch sẽ và chuyên nghiệp. Bác sĩ
+                      tư vấn kỹ, tận tâm nên mình rất yên tâm khi đưa bé tới
+                      khám. Nhân viên thân thiện, hỗ trợ nhiệt tình. Sẽ tiếp tục
+                      ủng hộ lâu dài!"
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Card 4 -->
+                <li class="splide__slide">
+                  <div class="review-item-card">
+                    <div class="review-card-header">
+                      <div class="review-avatar">T</div>
+                      <div class="review-user-info">
+                        <span class="review-user-name">Trinh Nguyen</span>
+                        <span class="review-verified"
+                          >✓ Đã xác thực trên Google</span
+                        >
+                      </div>
+                    </div>
+                    <div class="google-stars">★★★★★</div>
+                    <p class="review-text">
+                      "Phòng khám sạch sẽ, bác sĩ tận tâm và điều trị tốt, 2 bé
+                      nhà mình đều theo dõi sức khoẻ và thăm khám ở đây, highly
+                      recommend cho ba mẹ nào ở bình dương thì đến đây thăm khám
+                      cho các con nhé."
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Card 5 -->
+                <li class="splide__slide">
+                  <div class="review-item-card">
+                    <div class="review-card-header">
+                      <div class="review-avatar">B</div>
+                      <div class="review-user-info">
+                        <span class="review-user-name"
+                          >Cửa Hàng Đồ Chơi Bảo Bảo</span
+                        >
+                        <span class="review-verified"
+                          >✓ Đã xác thực trên Google</span
+                        >
+                      </div>
+                    </div>
+                    <div class="google-stars">★★★★★</div>
+                    <p class="review-text">
+                      "Mấy bé nhà mình đều khám, chích ngừa và triệt sản ở đây.
+                      Bác sĩ tư vấn nhiệt tình theo dõi và nhắn tin tình trạng
+                      của bé liên tục. Môi trường sạch sẽ và chuyên nghiệp mọi
+                      người nên ghé."
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Card 6 -->
+                <li class="splide__slide">
+                  <div class="review-item-card">
+                    <div class="review-card-header">
+                      <div class="review-avatar">T</div>
+                      <div class="review-user-info">
+                        <span class="review-user-name">Thư Nguyễn</span>
+                        <span class="review-verified"
+                          >✓ Đã xác thực trên Google</span
+                        >
+                      </div>
+                    </div>
+                    <div class="google-stars">★★★★★</div>
+                    <p class="review-text">
+                      "Bác sĩ rất tận tâm trong quá trình khám mèo ạ. Mèo nhà e
+                      bị bệnh trị ở đây khi về nhà bsi luôn nhiệt tình hỏi thăm
+                      xem tình trạng của bé mèo e rất thích điều đó ạ 🫶🏻🫶🏻"
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section homepage-why-us">
+        <div class="container">
+          <!-- Section Header -->
+          <div
+            class="section-header"
+            data-animate="fadeInUp"
+            style="text-align: center; margin-bottom: 20px"
+          >
+            <h2
+              class="section-title"
+              style="font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 12px"
+            >
+              Tại sao chọn AT Pet Care
+            </h2>
+            <p
+              class="section-desc"
+              style="
+                max-width: 680px;
+                margin: 0 auto;
+                color: #555555;
+                font-size: 1rem;
+                line-height: 1.6;
+              "
+            >
+              Rất cảm ơn bạn đã sử dụng dịch vụ tại AT Pet Care. Nếu chưa, chúng
+              tôi có những lý do sau để hy vọng một lúc nào đó sẽ được phục vụ
+              bạn.
+            </p>
+          </div>
+
+          <!-- Center Illustration (Girl walking dog) -->
+
+          <div
+            class="hero-illustration"
+            style="
+              margin-top: 10px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <dotlottie-player
+              src="https://lottie.host/63cf4412-a2f4-4490-a63c-eb575da70312/X7LYSKGfnS.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 360px; height: 280px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+
+          <!-- 4 Feature Cards (2x2 Grid) -->
+          <div class="why-us-grid">
+            <!-- Card 1: Cam kết sự hài lòng -->
+            <div class="why-us-item" data-animate="fadeInUp">
+              <div class="why-icon-badge badge-blue">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
               </div>
-              <div class="google-stars">★★★★★</div>
-              <p class="review-text">
-                "Bác sĩ đội ngũ chuyên nghiệp và tận tâm. Yên tâm khi mang pet
-                đến đây khám. Mèo mình bệnh rất nặng tưởng như không ổn nay đã
-                gần như khỏi bệnh, đánh giá 5 sao!"
-              </p>
+              <div class="why-us-text">
+                <h3>Cam kết sự hài lòng</h3>
+                <p>Đảm bảo nhận được đánh giá tốt của khách hàng</p>
+              </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="review-item-card">
-              <div class="review-card-header">
-                <div class="review-avatar">Q</div>
-                <div class="review-user-info">
-                  <span class="review-user-name">Quyen Vo</span>
-                  <span class="review-verified">✓ Đã xác thực trên Google</span>
-                </div>
+            <!-- Card 2: Thanh toán tiện lợi -->
+            <div class="why-us-item" data-animate="fadeInUp" class="delay-1">
+              <div class="why-icon-badge badge-salmon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="5" width="20" height="14" rx="3" ry="3"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                  <line
+                    x1="6"
+                    y1="15"
+                    x2="10"
+                    y2="15"
+                    stroke-width="2.5"
+                  ></line>
+                </svg>
               </div>
-              <div class="google-stars">★★★★★</div>
-              <p class="review-text">
-                "Bác sĩ An chăm sóc bé tận tâm lắm luôn ạ, cảm ơn bác sĩ rất
-                nhiều ạ 🍀 Phòng khám hiện đại và rất sạch sẽ."
-              </p>
+              <div class="why-us-text">
+                <h3>Thanh toán tiện lợi</h3>
+                <p>
+                  Khách hàng có thể thanh toán bằng tiền mặt hoặc chuyển khoản
+                </p>
+              </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="review-item-card">
-              <div class="review-card-header">
-                <div class="review-avatar">Ý</div>
-                <div class="review-user-info">
-                  <span class="review-user-name">Ý Nguyễn</span>
-                  <span class="review-verified">✓ Đã xác thực trên Google</span>
-                </div>
+            <!-- Card 3: Sạch sẽ & thân thiện -->
+            <div class="why-us-item" data-animate="fadeInUp" class="delay-2">
+              <div class="why-icon-badge badge-green">
+                <svg viewBox="0 0 24 24" fill="#ffffff">
+                  <path
+                    d="M12 2l1.5 3.8L17.3 7l-3.8 1.5L12 12.3 10.5 8.5 6.7 7l3.8-1.2L12 2z"
+                  />
+                  <path d="M19 13.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z" />
+                  <path d="M5.5 13.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z" />
+                </svg>
               </div>
-              <div class="google-stars">★★★★★</div>
-              <p class="review-text">
-                "Phòng khám PetCare rất sạch sẽ và chuyên nghiệp. Bác sĩ tư vấn
-                kỹ, tận tâm nên mình rất yên tâm khi đưa bé tới khám. Nhân viên
-                thân thiện, hỗ trợ nhiệt tình. Sẽ tiếp tục ủng hộ lâu dài!"
-              </p>
+              <div class="why-us-text">
+                <h3>Sạch sẽ & thân thiện</h3>
+                <p>Không gian được thiết kế thoáng mát, sạch sẽ</p>
+              </div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="review-item-card">
-              <div class="review-card-header">
-                <div class="review-avatar">T</div>
-                <div class="review-user-info">
-                  <span class="review-user-name">Trinh Nguyen</span>
-                  <span class="review-verified">✓ Đã xác thực trên Google</span>
-                </div>
+            <!-- Card 4: Khuyến mãi -->
+            <div class="why-us-item" data-animate="fadeInUp" class="delay-3">
+              <div class="why-icon-badge badge-purple">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="19" y1="5" x2="5" y2="19"></line>
+                  <circle cx="7" cy="7" r="2.5" fill="#ffffff"></circle>
+                  <circle cx="17" cy="17" r="2.5" fill="#ffffff"></circle>
+                </svg>
               </div>
-              <div class="google-stars">★★★★★</div>
-              <p class="review-text">
-                "Phòng khám sạch sẽ, bác sĩ tận tâm và điều trị tốt, 2 bé nhà
-                mình đều theo dõi sức khoẻ và thăm khám ở đây, highly recommend
-                cho ba mẹ nào ở bình dương thì đến đây thăm khám cho các con
-                nhé."
-              </p>
+              <div class="why-us-text">
+                <h3>Khuyến mãi</h3>
+                <p>
+                  Nhiều chế độ khuyến mãi cho những khách hàng thân thiết của AT
+                  Pet Care
+                </p>
+              </div>
             </div>
+          </div>
 
-            <!-- Card 5 -->
-            <div class="review-item-card">
-              <div class="review-card-header">
-                <div class="review-avatar">B</div>
-                <div class="review-user-info">
-                  <span class="review-user-name">Cửa Hàng Đồ Chơi Bảo Bảo</span>
-                  <span class="review-verified">✓ Đã xác thực trên Google</span>
-                </div>
-              </div>
-              <div class="google-stars">★★★★★</div>
-              <p class="review-text">
-                "Mấy bé nhà mình đều khám, chích ngừa và triệt sản ở đây. Bác sĩ
-                tư vấn nhiệt tình theo dõi và nhắn tin tình trạng của bé liên
-                tục. Môi trường sạch sẽ và chuyên nghiệp mọi người nên ghé."
-              </p>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="review-item-card">
-              <div class="review-card-header">
-                <div class="review-avatar">T</div>
-                <div class="review-user-info">
-                  <span class="review-user-name">Thư Nguyễn</span>
-                  <span class="review-verified">✓ Đã xác thực trên Google</span>
-                </div>
-              </div>
-              <div class="google-stars">★★★★★</div>
-              <p class="review-text">
-                "Bác sĩ rất tận tâm trong quá trình khám mèo ạ. Mèo nhà e bị
-                bệnh trị ở đây khi về nhà bsi luôn nhiệt tình hỏi thăm xem tình
-                trạng của bé mèo e rất thích điều đó ạ 🫶🏻🫶🏻"
-              </p>
-            </div>
+          <!-- Call to Action Button -->
+          <div class="why-us-action" data-animate="fadeInUp">
+            <a
+              href="./pages/about/why-choose-us.html"
+              class="button why-us-btn"
+            >
+              Những ưu điểm khác ➔
+            </a>
           </div>
         </div>
       </section>
@@ -441,7 +641,6 @@
               autoplay
             ></dotlottie-player>
           </div>
-          >
 
           <div class="services-icon-grid">
             <div class="service-icon-box">
@@ -528,10 +727,23 @@
         <div class="container section-content">
           <div class="section-header">
             <h2 class="section-title">Hình ảnh hoạt động</h2>
-            <p class="section-desc">
-              Không gian khám chữa bệnh và những khoảnh khắc chăm sóc các bé
-              cưng tại PetCare
-            </p>
+            <div
+              class="hero-illustration"
+              style="
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-start;
+              "
+            >
+              <dotlottie-player
+                src="https://lottie.host/63cf4412-a2f4-4490-a63c-eb575da70312/X7LYSKGfnS.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 360px; height: 280px"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
           </div>
 
           <div class="gallery-masonry-grid">
@@ -630,7 +842,7 @@
                   bác sĩ lo hết."
                 </p>
                 <div class="quote-author">— Chau Anh Hoang (Google Maps)</div>
-                <div class="img-placeholder ratio-4-3" style="margin-top: 10px">
+                <div class="img-placeholder ratio-4-3">
                   <img
                     src="./assets/Homepage-Girl-with-cat.webp"
                     alt="Khách hàng hài lòng với dịch vụ của PetCare"
@@ -673,14 +885,10 @@
               </div>
               <div style="padding: 24px">
                 <h3 class="blog-card-title">
-                  <a href="./pages/blog/blog-detail.html"
+                  <a href="./pages/blog/blog-vaccination-immunity.html"
                     >Tiêm ngừa chó mèo: 1 lần có miễn dịch mãi mãi?</a
                   >
                 </h3>
-
-                <a href="./pages/blog/blog-detail.html" class="button is-link"
-                  >Đọc tiếp →</a
-                >
               </div>
             </div>
 
@@ -693,7 +901,7 @@
                 />
                 <div class="blog-card-content">
                   <h4 class="blog-card-title">
-                    <a href="./pages/blog/blog-detail.html"
+                    <a href="./pages/blog/blog-puppy-vaccination-schedule.html"
                       >Những mũi tên quan trọng cần tiêm cho cún</a
                     >
                   </h4>
@@ -707,7 +915,7 @@
                 />
                 <div class="blog-card-content">
                   <h4 class="blog-card-title">
-                    <a href="./pages/blog/blog-detail.html"
+                    <a href="./pages/blog//blog-cat-dog-ultrasound.html"
                       >Siêu Âm Chó Mèo: 7 Dấu Hiệu Cảnh Báo Không Nên Bỏ Qua</a
                     >
                   </h4>
@@ -718,7 +926,7 @@
 
           <div style="text-align: center">
             <a
-              href="./pages/blog/blog.html"
+              href="./index.html"
               class="button primary"
               style="border-radius: 10px"
             >
@@ -954,6 +1162,29 @@
       </div>
     </div>
 
+    <!-- Splide JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var reviewsSplide = new Splide("#reviewsSplide", {
+          perPage: 3 /* Hiển thị 3 đánh giá trong 1 khung */,
+          focus: 0,
+          omitEnd: true,
+          gap: "24px",
+          pagination: true,
+          arrows: true,
+          breakpoints: {
+            768: {
+              perPage: 1 /* Trên điện thoại hiển thị 1 đánh giá để không bị ép chữ */,
+              gap: "16px",
+            },
+          },
+        });
+
+        reviewsSplide.mount();
+      });
+    </script>
     <script src="./js/data.js"></script>
     <script src="./js/global.js"></script>
     <script src="./js/home.js"></script>

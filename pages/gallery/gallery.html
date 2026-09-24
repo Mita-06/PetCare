@@ -120,9 +120,7 @@
             <div class="nav-item active">
               <a href="./gallery.html" class="nav-link">Hình Ảnh</a>
             </div>
-            <div class="nav-item">
-              <a href="../blog/blog.html" class="nav-link">Cẩm Nang</a>
-            </div>
+
             <div class="nav-item">
               <a href="../contact/contact.html" class="nav-link">Liên Hệ</a>
             </div>
@@ -184,142 +182,433 @@
         >
         <a href="../shop/pet-shop.html" class="mobile-nav-link">Pet Shop</a>
         <a href="./gallery.html" class="mobile-nav-link active">Hình Ảnh</a>
-        <a href="../blog/blog.html" class="mobile-nav-link">Cẩm Nang</a>
+
         <a href="../contact/contact.html" class="mobile-nav-link">Liên Hệ</a>
       </div>
     </div>
 
-    <main id="main">
-      <section class="section gallery-section">
-        <div class="container">
-          <h1 class="section-title">Thư viện hình ảnh hoạt động</h1>
-          <p class="section-desc">
-            Ghi lại những khoảnh khắc làm việc tận tâm và tình cảm ấm áp cùng
-            các bé thú cưng tại PetCare.
-          </p>
-
-          <div class="gallery-masonry-grid">
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Khám lâm sàng cho cún Poodle</span>
-                <span class="img-sub">Hinh-Anh-1.webp</span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Siêu âm ổ bụng chẩn đoán</span>
-                <span class="img-sub">Hinh-Anh-2.webp</span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Ca phẫu thuật triệt sản an toàn</span>
-                <span class="img-sub">Hinh-Anh-3.webp</span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption">Bé mèo hồi phục sau điều trị</span>
-                <span class="img-sub">Hinh-Anh-4.webp</span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Thực hiện lấy mẫu máu xét nghiệm</span
-                >
-                <span class="img-sub">Hinh-Anh-5.webp</span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Tiêm vắc xin ngừa 7 bệnh cho chó</span
-                >
-                <span class="img-sub">Hinh-Anh-6.webp</span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Không gian sảnh tiếp đón sạch sẽ</span
-                >
-                <span class="img-sub">Hinh-Anh-7.webp</span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <div class="img-placeholder ratio-4-3">
-                <div class="img-badge">IMG</div>
-                <span class="img-caption"
-                  >Bác sĩ tư vấn chế độ ăn cho boss</span
-                >
-                <span class="img-sub">Hinh-Anh-8.webp</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- BLACKBOX SECTION -->
-      <section class="section homepage-blackbox">
-        <div class="container">
-          <div class="blackbox-grid">
-            <div>
-              <span class="blackbox-tag">Không chỉ là phòng khám</span>
-              <h2 class="blackbox-title">Chúng tôi ở đây để giúp bạn</h2>
-              <div class="blackbox-list">
-                <div class="blackbox-item">
-                  <span class="blackbox-icon">●</span>
-                  <p>
-                    Luôn đồng hành cùng bạn trong việc chăm sóc và điều trị cho
-                    thú cưng.
-                  </p>
-                </div>
-                <div class="blackbox-item">
-                  <span class="blackbox-icon">●</span>
-                  <p>
-                    Luôn giải đáp những thắc mắc của bạn một cách nhanh nhất có
-                    thể.
-                  </p>
-                </div>
-                <div class="blackbox-item">
-                  <span class="blackbox-icon">●</span>
-                  <p>
-                    Luôn chân thành lắng nghe và đón nhận những góp ý một cách
-                    tích cực.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div
-                class="img-placeholder ratio-1-1"
-                style="border-color: #333333; border-radius: 20px"
-              >
+    <main id="main" class="gallery-page-main">
+      <div id="gallery-masonry" class="gallery-masonry-wrapper">
+        <!-- Item 1: Vệ sinh tai cho chó mèo -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
                 <img
-                  src="../../assets/Homepage-Dr-An-1024x684 (1).webp"
-                  alt="Bác sĩ An - Phòng khám thú y PetCare Thủ Dầu Một"
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-1200x800-1.webp"
+                  alt="Dịch vụ vệ sinh tai cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
                 />
               </div>
+              <div class="gallery-zoom-icon">🔍</div>
             </div>
-          </div>
+          </a>
         </div>
-      </section>
+
+        <!-- Item 2: Mèo Anh được điều trị -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets/Photo-1200x800-2-768x512.webp"
+                  alt="Mèo Anh được điều trị tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 3: Điều trị bệnh da chó mèo -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="1200"
+                  height="800"
+                  src="../../assets/Photo-1200x800-5.webp"
+                  alt="Điều trị bệnh da chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 4: Bé mèo đang được chuẩn bị điều trị -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets/Photo-800x1200-4.webp"
+                  alt="Bé mèo đang được chuẩn bị điều trị tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 5: Điều trị cho chó mèo -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets/Photo-1200x800-3.webp"
+                  alt="Điều trị cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 6: Em cún đang được điều trị -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="1200"
+                  height="800"
+                  src="../../assets/Photo-1200x800-1.webp"
+                  alt="Em cún đang được điều trị tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 7: Soi đèn hồng ngoại cho chó mèo -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets//Photo-800x800-8.webp"
+                  alt="Soi đèn hồng ngoại cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 8: Truyền nước cho chó mèo -->
+        <div class="gallery-col">
+        
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-800x1200-6 (1).webp"
+                  alt="Truyền nước cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 9: Dịch vụ đỡ đẻ cho chó mèo -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="1200"
+                  height="800"
+                  src="../../assets/Photo-1200x800-7.webp"
+                  alt="Dịch vụ đỡ đẻ cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 10: Cấp cứu tai nạn cho chó mèo -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets/Photo-1200x800-5.webp"
+                  alt="Cấp cứu tai nạn cho cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 11: Lót khăn trắng sạch sẽ khi điều trị -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-800x800-3.webp"
+                  alt="Lót khăn trắng sạch sẽ khi điều trị chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 12: Mèo mẹ sinh con khỏe mạnh -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-800x800-2.webp"
+                  alt="Mèo mẹ sinh con khỏe mạnh tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 13: Cạo vôi răng cho chó mèo -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="1200"
+                  height="800"
+                  src="../../assets/Photo-1200x800-7.webp"
+                  alt="Cạo vôi răng cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 14: Các bé chó mèo tại PetCare -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="1200"
+                  height="800"
+                  src="../../assets/Photo-800x800-8.webp"
+                  alt="Các bé chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 15: Bác sĩ thú y tận tâm -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-800x800-3.webp"
+                  alt="Bác sĩ thú y tận tâm cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 16: Truyền nước điều trị bệnh -->
+        
+             <!-- Item 17: Bé mèo khỏe mạnh tươi tắn -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-800x800-8.webp"
+                  alt="Bé mèo khỏe mạnh tươi tắn sau khi được điều trị tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+      
+
+        <!-- Item 19: Bé cún vui vẻ sau điều trị -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-800x800-6.webp"
+                  alt="Bé cún vui vẻ sau khi được điều trị tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 20: Phẫu thuật an toàn cho chó mèo -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="800"
+                  src="../../assets/Photo-800x1200-4.webp"
+                  alt="Phẫu thuật an toàn cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 21: Phẫu thuật cho chó mèo -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets/Photo-800x800-1.webp"
+                  alt="Phẫu thuật cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 22: May thẩm mỹ cho chó mèo -->
+        <div class="gallery-col">
+        
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets/Photo-1200x800-2-768x512.webp"
+                  alt="Phẫu thuật và may thẩm mỹ cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 23: Truyền máu chó mèo -->
+        <div class="gallery-col">
+         
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets//Photo-800x1200-1-1-683x1024.webp"
+                  alt="Dịch vụ truyền máu chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 24: Dịch vụ sản khoa cho chó mèo -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="800"
+                  height="1200"
+                  src="../../assets/Photo-1200x800-5.webp"
+                  alt="Dịch vụ sản khoa cho chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Item 25: Điều trị nội khoa chó mèo -->
+        <div class="gallery-col">
+          
+            <div class="gallery-box">
+              <div class="box-image">
+                <img
+                  width="1200"
+                  height="800"
+                  src="../../assets/Photo-800x1200-8-683x1024.webp"
+                  alt="Điều trị bệnh chó mèo tại phòng khám thú y Thủ Dầu Một AT Pet Care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-zoom-icon">🔍</div>
+            </div>
+          </a>
+        </div>
+
+       
+      </div>
     </main>
 
     <!-- FOOTER -->

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initVkaDial();
   initScrollTop();
   initLiveSearch();
+  initHeaderScroll();
 });
 function initMobileSidebar() {
   const openBtn = document.getElementById("mobileMenuBtn");
